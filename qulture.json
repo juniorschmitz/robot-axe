@@ -1,0 +1,3203 @@
+{
+    "inapplicable": [
+        {
+            "description": "Ensures every accesskey attribute value is unique",
+            "help": "accesskey attribute value must be unique",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/accesskeys?application=axeAPI",
+            "id": "accesskeys",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "best-practice",
+                "cat.keyboard"
+            ]
+        },
+        {
+            "description": "Ensures <area> elements of image maps have alternate text",
+            "help": "Active <area> elements must have alternate text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/area-alt?application=axeAPI",
+            "id": "area-alt",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag111",
+                "section508",
+                "section508.22.a"
+            ]
+        },
+        {
+            "description": "Ensures ARIA attributes are allowed for an element's role",
+            "help": "Elements must only use allowed ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/aria-allowed-attr?application=axeAPI",
+            "id": "aria-allowed-attr",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag412"
+            ]
+        },
+        {
+            "description": "Ensures unsupported DPUB roles are only used on elements with implicit fallback roles",
+            "help": "Unsupported DPUB ARIA roles should be used on elements with implicit fallback roles",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/aria-dpub-role-fallback?application=axeAPI",
+            "id": "aria-dpub-role-fallback",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag131"
+            ]
+        },
+        {
+            "description": "Ensures all ARIA attributes have valid values",
+            "help": "ARIA attributes must conform to valid values",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/aria-valid-attr-value?application=axeAPI",
+            "id": "aria-valid-attr-value",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag412"
+            ]
+        },
+        {
+            "description": "Ensures attributes that begin with aria- are valid ARIA attributes",
+            "help": "ARIA attributes must conform to valid names",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/aria-valid-attr?application=axeAPI",
+            "id": "aria-valid-attr",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag412"
+            ]
+        },
+        {
+            "description": "Ensures <blink> elements are not used",
+            "help": "<blink> elements are deprecated and must not be used",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/blink?application=axeAPI",
+            "id": "blink",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.time-and-media",
+                "wcag2a",
+                "wcag222",
+                "section508",
+                "section508.22.j"
+            ]
+        },
+        {
+            "description": "Ensures related <input type=\"checkbox\"> elements have a group and that the group designation is consistent",
+            "help": "Checkbox inputs with the same name attribute value must be part of a group",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/checkboxgroup?application=axeAPI",
+            "id": "checkboxgroup",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.forms",
+                "best-practice"
+            ]
+        },
+        {
+            "description": "Ensures <dl> elements are structured correctly",
+            "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script> or <template> elements",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/definition-list?application=axeAPI",
+            "id": "definition-list",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.structure",
+                "wcag2a",
+                "wcag131"
+            ]
+        },
+        {
+            "description": "Ensures <dt> and <dd> elements are contained by a <dl>",
+            "help": "<dt> and <dd> elements must be contained by a <dl>",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/dlitem?application=axeAPI",
+            "id": "dlitem",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.structure",
+                "wcag2a",
+                "wcag131"
+            ]
+        },
+        {
+            "description": "Ensures headings have discernible text",
+            "help": "Headings must not be empty",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/empty-heading?application=axeAPI",
+            "id": "empty-heading",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.name-role-value",
+                "best-practice"
+            ]
+        },
+        {
+            "description": "Ensures <iframe> and <frame> elements contain the axe-core script",
+            "help": "Frames must be tested with axe-core",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/frame-tested?application=axeAPI",
+            "id": "frame-tested",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.structure",
+                "review-item"
+            ]
+        },
+        {
+            "description": "Ensures <iframe> and <frame> elements contain a unique title attribute",
+            "help": "Frames must have a unique title attribute",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/frame-title-unique?application=axeAPI",
+            "id": "frame-title-unique",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.text-alternatives",
+                "best-practice"
+            ]
+        },
+        {
+            "description": "Ensures <iframe> and <frame> elements contain a non-empty title attribute",
+            "help": "Frames must have title attribute",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/frame-title?application=axeAPI",
+            "id": "frame-title",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag241",
+                "wcag412",
+                "section508",
+                "section508.22.i"
+            ]
+        },
+        {
+            "description": "Ensures the order of headings is semantically correct",
+            "help": "Heading levels should only increase by one",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/heading-order?application=axeAPI",
+            "id": "heading-order",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.semantics",
+                "best-practice"
+            ]
+        },
+        {
+            "description": "Ensures the lang attribute of the <html> element has a valid value",
+            "help": "<html> element must have a valid value for the lang attribute",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/html-lang-valid?application=axeAPI",
+            "id": "html-lang-valid",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.language",
+                "wcag2a",
+                "wcag311"
+            ]
+        },
+        {
+            "description": "Ensure that HTML elements with both valid lang and xml:lang attributes agree on the base language of the page",
+            "help": "HTML elements with lang and xml:lang must have the same base language",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/html-xml-lang-mismatch?application=axeAPI",
+            "id": "html-xml-lang-mismatch",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.language",
+                "wcag2a",
+                "wcag311"
+            ]
+        },
+        {
+            "description": "Ensures <input type=\"image\"> elements have alternate text",
+            "help": "Image buttons must have alternate text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/input-image-alt?application=axeAPI",
+            "id": "input-image-alt",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag111",
+                "section508",
+                "section508.22.a"
+            ]
+        },
+        {
+            "description": "Ensures the banner landmark is at top level",
+            "help": "Banner landmark must not be contained in another landmark",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/landmark-banner-is-top-level?application=axeAPI",
+            "id": "landmark-banner-is-top-level",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.semantics",
+                "best-practice"
+            ]
+        },
+        {
+            "description": "Ensures the contentinfo landmark is at top level",
+            "help": "Contentinfo landmark must not be contained in another landmark",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/landmark-contentinfo-is-top-level?application=axeAPI",
+            "id": "landmark-contentinfo-is-top-level",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.semantics",
+                "best-practice"
+            ]
+        },
+        {
+            "description": "Ensures the main landmark is at top level",
+            "help": "Main landmark must not be contained in another landmark",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/landmark-main-is-top-level?application=axeAPI",
+            "id": "landmark-main-is-top-level",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.semantics",
+                "best-practice"
+            ]
+        },
+        {
+            "description": "Ensures presentational <table> elements do not use <th>, <caption> elements or the summary attribute",
+            "help": "Layout tables must not use data table elements",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/layout-table?application=axeAPI",
+            "id": "layout-table",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.semantics",
+                "wcag2a",
+                "wcag131"
+            ]
+        },
+        {
+            "description": "Ensures that lists are structured correctly",
+            "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/list?application=axeAPI",
+            "id": "list",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.structure",
+                "wcag2a",
+                "wcag131"
+            ]
+        },
+        {
+            "description": "Ensures <li> elements are used semantically",
+            "help": "<li> elements must be contained in a <ul> or <ol>",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/listitem?application=axeAPI",
+            "id": "listitem",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.structure",
+                "wcag2a",
+                "wcag131"
+            ]
+        },
+        {
+            "description": "Ensures <marquee> elements are not used",
+            "help": "<marquee> elements are deprecated and must not be used",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/marquee?application=axeAPI",
+            "id": "marquee",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.parsing",
+                "wcag2a",
+                "wcag222"
+            ]
+        },
+        {
+            "description": "Ensures <meta http-equiv=\"refresh\"> is not used",
+            "help": "Timed refresh must not exist",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/meta-refresh?application=axeAPI",
+            "id": "meta-refresh",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.time",
+                "wcag2a",
+                "wcag2aaa",
+                "wcag221",
+                "wcag224",
+                "wcag325"
+            ]
+        },
+        {
+            "description": "Ensures <object> elements have alternate text",
+            "help": "<object> elements must have alternate text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/object-alt?application=axeAPI",
+            "id": "object-alt",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag111",
+                "section508",
+                "section508.22.a"
+            ]
+        },
+        {
+            "description": "Ensures related <input type=\"radio\"> elements have a group and that the group designation is consistent",
+            "help": "Radio inputs with the same name attribute value must be part of a group",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/radiogroup?application=axeAPI",
+            "id": "radiogroup",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.forms",
+                "best-practice"
+            ]
+        },
+        {
+            "description": "Ensures the scope attribute is used correctly on tables",
+            "help": "scope attribute should be used correctly",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/scope-attr-valid?application=axeAPI",
+            "id": "scope-attr-valid",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.tables",
+                "best-practice"
+            ]
+        },
+        {
+            "description": "Ensures that server-side image maps are not used",
+            "help": "Server-side image maps must not be used",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/server-side-image-map?application=axeAPI",
+            "id": "server-side-image-map",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag211",
+                "section508",
+                "section508.22.f"
+            ]
+        },
+        {
+            "description": "Ensure all skip links have a focusable target",
+            "help": "The skip-link target should exist and be focusable",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/skip-link?application=axeAPI",
+            "id": "skip-link",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.keyboard",
+                "best-practice"
+            ]
+        },
+        {
+            "description": "Ensures tabindex attribute values are not greater than 0",
+            "help": "Elements should not have tabindex greater than zero",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/tabindex?application=axeAPI",
+            "id": "tabindex",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.keyboard",
+                "best-practice"
+            ]
+        },
+        {
+            "description": "Ensure that tables do not have the same summary and caption",
+            "help": "The <caption> element should not contain the same text as the summary attribute",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/table-duplicate-name?application=axeAPI",
+            "id": "table-duplicate-name",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.tables",
+                "best-practice"
+            ]
+        },
+        {
+            "description": "Ensure that each cell in a table using the headers refers to another cell in that table",
+            "help": "All cells in a table element that use the headers attribute must only refer to other cells of that same table",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/td-headers-attr?application=axeAPI",
+            "id": "td-headers-attr",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.tables",
+                "wcag2a",
+                "wcag131",
+                "section508",
+                "section508.22.g"
+            ]
+        },
+        {
+            "description": "Ensure that each table header in a data table refers to data cells",
+            "help": "All th elements and elements with role=columnheader/rowheader must have data cells they describe",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/th-has-data-cells?application=axeAPI",
+            "id": "th-has-data-cells",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.tables",
+                "wcag2a",
+                "wcag131",
+                "section508",
+                "section508.22.g"
+            ]
+        },
+        {
+            "description": "Ensures lang attributes have valid values",
+            "help": "lang attribute must have a valid value",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/valid-lang?application=axeAPI",
+            "id": "valid-lang",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.language",
+                "wcag2aa",
+                "wcag312"
+            ]
+        },
+        {
+            "description": "Ensures <video> elements have captions",
+            "help": "<video> elements must have captions",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/video-caption?application=axeAPI",
+            "id": "video-caption",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag122",
+                "section508",
+                "section508.22.a"
+            ]
+        },
+        {
+            "description": "Ensures <video> elements have audio descriptions",
+            "help": "<video> elements must have an audio description track",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/video-description?application=axeAPI",
+            "id": "video-description",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.text-alternatives",
+                "wcag2aa",
+                "wcag125",
+                "section508",
+                "section508.22.b"
+            ]
+        }
+    ],
+    "incomplete": [],
+    "passes": [
+        {
+            "description": "Ensures role attribute has an appropriate value for the element",
+            "help": "ARIA role must be appropriate for the element",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/aria-allowed-role?application=axeAPI",
+            "id": "aria-allowed-role",
+            "impact": "minor",
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "aria-allowed-role",
+                            "impact": "minor",
+                            "message": "ARIA role is allowed for given element",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"new_session__icon-button mt-32\" role=\"button\" href=\"/users/sso_sign_in\">Continuar com Single Sign On</a>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "a[href$=\"sso_sign_in\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "aria-allowed-role",
+                            "impact": "minor",
+                            "message": "ARIA role is allowed for given element",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"new_session__icon-button mt-32\" role=\"button\" href=\"https://slack.com/oauth/v2/authorize?user_scope=identity.basic,identity.email,identity.avatar&amp;client_id=7381704720.299629824786\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".new_session__icon-button.mt-32[role=\"button\"]:nth-child(7)"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "aria-allowed-role",
+                            "impact": "minor",
+                            "message": "ARIA role is allowed for given element",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"new_session__icon-button mt-32\" role=\"button\" rel=\"nofollow\" data-method=\"post\" href=\"/users/auth/apple\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "a[rel=\"nofollow\"]"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.aria",
+                "best-practice"
+            ]
+        },
+        {
+            "description": "Ensures aria-hidden='true' is not present on the document body.",
+            "help": "aria-hidden='true' must not be present on the document body",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/aria-hidden-body?application=axeAPI",
+            "id": "aria-hidden-body",
+            "impact": null,
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "aria-hidden-body",
+                            "impact": "critical",
+                            "message": "No aria-hidden attribute is present on document body",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<body>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "body"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag412"
+            ]
+        },
+        {
+            "description": "Ensures elements with ARIA roles have all required ARIA attributes",
+            "help": "Required ARIA attributes must be provided",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/aria-required-attr?application=axeAPI",
+            "id": "aria-required-attr",
+            "impact": null,
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "aria-required-attr",
+                            "impact": "critical",
+                            "message": "All required ARIA attributes are present",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<input type=\"submit\" name=\"commit\" value=\"Entrar\" class=\"qr-button qr-button--block qr-button--primary mt-48\" role=\"button\" data-disable-with=\"Entrar\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".qr-button"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "aria-required-attr",
+                            "impact": "critical",
+                            "message": "All required ARIA attributes are present",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"new_session__icon-button mt-32\" role=\"button\" href=\"/users/sso_sign_in\">Continuar com Single Sign On</a>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "a[href$=\"sso_sign_in\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "aria-required-attr",
+                            "impact": "critical",
+                            "message": "All required ARIA attributes are present",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"new_session__icon-button mt-32\" role=\"button\" href=\"https://slack.com/oauth/v2/authorize?user_scope=identity.basic,identity.email,identity.avatar&amp;client_id=7381704720.299629824786\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".new_session__icon-button.mt-32[role=\"button\"]:nth-child(7)"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "aria-required-attr",
+                            "impact": "critical",
+                            "message": "All required ARIA attributes are present",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"new_session__icon-button mt-32\" role=\"button\" rel=\"nofollow\" data-method=\"post\" href=\"/users/auth/apple\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "a[rel=\"nofollow\"]"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag412"
+            ]
+        },
+        {
+            "description": "Ensures elements with an ARIA role that require child roles contain them",
+            "help": "Certain ARIA roles must contain particular children",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/aria-required-children?application=axeAPI",
+            "id": "aria-required-children",
+            "impact": null,
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "aria-required-children",
+                            "impact": "critical",
+                            "message": "Required ARIA children are present",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<input type=\"submit\" name=\"commit\" value=\"Entrar\" class=\"qr-button qr-button--block qr-button--primary mt-48\" role=\"button\" data-disable-with=\"Entrar\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".qr-button"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "aria-required-children",
+                            "impact": "critical",
+                            "message": "Required ARIA children are present",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"new_session__icon-button mt-32\" role=\"button\" href=\"/users/sso_sign_in\">Continuar com Single Sign On</a>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "a[href$=\"sso_sign_in\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "aria-required-children",
+                            "impact": "critical",
+                            "message": "Required ARIA children are present",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"new_session__icon-button mt-32\" role=\"button\" href=\"https://slack.com/oauth/v2/authorize?user_scope=identity.basic,identity.email,identity.avatar&amp;client_id=7381704720.299629824786\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".new_session__icon-button.mt-32[role=\"button\"]:nth-child(7)"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "aria-required-children",
+                            "impact": "critical",
+                            "message": "Required ARIA children are present",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"new_session__icon-button mt-32\" role=\"button\" rel=\"nofollow\" data-method=\"post\" href=\"/users/auth/apple\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "a[rel=\"nofollow\"]"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag131"
+            ]
+        },
+        {
+            "description": "Ensures elements with an ARIA role that require parent roles are contained by them",
+            "help": "Certain ARIA roles must be contained by particular parents",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/aria-required-parent?application=axeAPI",
+            "id": "aria-required-parent",
+            "impact": null,
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "aria-required-parent",
+                            "impact": "critical",
+                            "message": "Required ARIA parent role present",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<input type=\"submit\" name=\"commit\" value=\"Entrar\" class=\"qr-button qr-button--block qr-button--primary mt-48\" role=\"button\" data-disable-with=\"Entrar\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".qr-button"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "aria-required-parent",
+                            "impact": "critical",
+                            "message": "Required ARIA parent role present",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"new_session__icon-button mt-32\" role=\"button\" href=\"/users/sso_sign_in\">Continuar com Single Sign On</a>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "a[href$=\"sso_sign_in\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "aria-required-parent",
+                            "impact": "critical",
+                            "message": "Required ARIA parent role present",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"new_session__icon-button mt-32\" role=\"button\" href=\"https://slack.com/oauth/v2/authorize?user_scope=identity.basic,identity.email,identity.avatar&amp;client_id=7381704720.299629824786\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".new_session__icon-button.mt-32[role=\"button\"]:nth-child(7)"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "aria-required-parent",
+                            "impact": "critical",
+                            "message": "Required ARIA parent role present",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"new_session__icon-button mt-32\" role=\"button\" rel=\"nofollow\" data-method=\"post\" href=\"/users/auth/apple\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "a[rel=\"nofollow\"]"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag131"
+            ]
+        },
+        {
+            "description": "Ensures all elements with a role attribute use a valid value",
+            "help": "ARIA roles used must conform to valid values",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/aria-roles?application=axeAPI",
+            "id": "aria-roles",
+            "impact": null,
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [],
+                    "html": "<input type=\"submit\" name=\"commit\" value=\"Entrar\" class=\"qr-button qr-button--block qr-button--primary mt-48\" role=\"button\" data-disable-with=\"Entrar\">",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "invalidrole",
+                            "impact": "critical",
+                            "message": "ARIA role is valid",
+                            "relatedNodes": []
+                        },
+                        {
+                            "data": null,
+                            "id": "abstractrole",
+                            "impact": "serious",
+                            "message": "Abstract roles are not used",
+                            "relatedNodes": []
+                        },
+                        {
+                            "data": null,
+                            "id": "unsupportedrole",
+                            "impact": "critical",
+                            "message": "ARIA role is supported",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        ".qr-button"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [],
+                    "html": "<a class=\"new_session__icon-button mt-32\" role=\"button\" href=\"/users/sso_sign_in\">Continuar com Single Sign On</a>",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "invalidrole",
+                            "impact": "critical",
+                            "message": "ARIA role is valid",
+                            "relatedNodes": []
+                        },
+                        {
+                            "data": null,
+                            "id": "abstractrole",
+                            "impact": "serious",
+                            "message": "Abstract roles are not used",
+                            "relatedNodes": []
+                        },
+                        {
+                            "data": null,
+                            "id": "unsupportedrole",
+                            "impact": "critical",
+                            "message": "ARIA role is supported",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        "a[href$=\"sso_sign_in\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [],
+                    "html": "<a class=\"new_session__icon-button mt-32\" role=\"button\" href=\"https://slack.com/oauth/v2/authorize?user_scope=identity.basic,identity.email,identity.avatar&amp;client_id=7381704720.299629824786\">",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "invalidrole",
+                            "impact": "critical",
+                            "message": "ARIA role is valid",
+                            "relatedNodes": []
+                        },
+                        {
+                            "data": null,
+                            "id": "abstractrole",
+                            "impact": "serious",
+                            "message": "Abstract roles are not used",
+                            "relatedNodes": []
+                        },
+                        {
+                            "data": null,
+                            "id": "unsupportedrole",
+                            "impact": "critical",
+                            "message": "ARIA role is supported",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        ".new_session__icon-button.mt-32[role=\"button\"]:nth-child(7)"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [],
+                    "html": "<a class=\"new_session__icon-button mt-32\" role=\"button\" rel=\"nofollow\" data-method=\"post\" href=\"/users/auth/apple\">",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "invalidrole",
+                            "impact": "critical",
+                            "message": "ARIA role is valid",
+                            "relatedNodes": []
+                        },
+                        {
+                            "data": null,
+                            "id": "abstractrole",
+                            "impact": "serious",
+                            "message": "Abstract roles are not used",
+                            "relatedNodes": []
+                        },
+                        {
+                            "data": null,
+                            "id": "unsupportedrole",
+                            "impact": "critical",
+                            "message": "ARIA role is supported",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        "a[rel=\"nofollow\"]"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag412"
+            ]
+        },
+        {
+            "description": "Ensures buttons have discernible text",
+            "help": "Buttons must have discernible text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/button-name?application=axeAPI",
+            "id": "button-name",
+            "impact": null,
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "non-empty-value",
+                            "impact": "critical",
+                            "message": "Element has a non-empty value attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<input type=\"submit\" name=\"commit\" value=\"Entrar\" class=\"qr-button qr-button--block qr-button--primary mt-48\" role=\"button\" data-disable-with=\"Entrar\">",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "focusable-no-name",
+                            "impact": "serious",
+                            "message": "Element is not in tab order or has accessible text",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        ".qr-button"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "Continuar com Single Sign On",
+                            "id": "button-has-visible-text",
+                            "impact": "critical",
+                            "message": "Element has inner text that is visible to screen readers",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"new_session__icon-button mt-32\" role=\"button\" href=\"/users/sso_sign_in\">Continuar com Single Sign On</a>",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "focusable-no-name",
+                            "impact": "serious",
+                            "message": "Element is not in tab order or has accessible text",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        "a[href$=\"sso_sign_in\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "Continuar com o Google",
+                            "id": "button-has-visible-text",
+                            "impact": "critical",
+                            "message": "Element has inner text that is visible to screen readers",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<button class=\"new_session__icon-button mt-32\" id=\"google-sign-in\">",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "focusable-no-name",
+                            "impact": "serious",
+                            "message": "Element is not in tab order or has accessible text",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        "#google-sign-in"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "Continuar com o Slack",
+                            "id": "button-has-visible-text",
+                            "impact": "critical",
+                            "message": "Element has inner text that is visible to screen readers",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"new_session__icon-button mt-32\" role=\"button\" href=\"https://slack.com/oauth/v2/authorize?user_scope=identity.basic,identity.email,identity.avatar&amp;client_id=7381704720.299629824786\">",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "focusable-no-name",
+                            "impact": "serious",
+                            "message": "Element is not in tab order or has accessible text",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        ".new_session__icon-button.mt-32[role=\"button\"]:nth-child(7)"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "Continuar com a Apple",
+                            "id": "button-has-visible-text",
+                            "impact": "critical",
+                            "message": "Element has inner text that is visible to screen readers",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"new_session__icon-button mt-32\" role=\"button\" rel=\"nofollow\" data-method=\"post\" href=\"/users/auth/apple\">",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "focusable-no-name",
+                            "impact": "serious",
+                            "message": "Element is not in tab order or has accessible text",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        "a[rel=\"nofollow\"]"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.name-role-value",
+                "wcag2a",
+                "wcag412",
+                "section508",
+                "section508.22.a"
+            ]
+        },
+        {
+            "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+            "help": "Elements must have sufficient color contrast",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/color-contrast?application=axeAPI",
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "bgColor": "#ffffff",
+                                "contrastRatio": 7,
+                                "expectedContrastRatio": "4.5:1",
+                                "fgColor": "#595959",
+                                "fontSize": "12.0pt",
+                                "fontWeight": "bold",
+                                "missingData": null
+                            },
+                            "id": "color-contrast",
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 7",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<label class=\"qr-form__label\" for=\"user_email\">Email</label>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "label[for=\"user_email\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "bgColor": "#ffffff",
+                                "contrastRatio": 21,
+                                "expectedContrastRatio": "4.5:1",
+                                "fgColor": "#000000",
+                                "fontSize": "10.0pt",
+                                "fontWeight": "normal",
+                                "missingData": null
+                            },
+                            "id": "color-contrast",
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 21",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<input autofocus=\"autofocus\" class=\"qr-form__input\" required=\"required\" type=\"email\" name=\"user[email]\" id=\"user_email\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#user_email"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "bgColor": "#ffffff",
+                                "contrastRatio": 7,
+                                "expectedContrastRatio": "4.5:1",
+                                "fgColor": "#595959",
+                                "fontSize": "12.0pt",
+                                "fontWeight": "bold",
+                                "missingData": null
+                            },
+                            "id": "color-contrast",
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 7",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<label class=\"qr-form__label\" for=\"user_password\">Senha</label>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "label[for=\"user_password\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "bgColor": "#ffffff",
+                                "contrastRatio": 21,
+                                "expectedContrastRatio": "4.5:1",
+                                "fgColor": "#000000",
+                                "fontSize": "10.0pt",
+                                "fontWeight": "normal",
+                                "missingData": null
+                            },
+                            "id": "color-contrast",
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 21",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<input autocomplete=\"off\" class=\"qr-form__input\" required=\"required\" type=\"password\" name=\"user[password]\" id=\"user_password\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#user_password"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "bgColor": "#ffffff",
+                                "contrastRatio": 7.57,
+                                "expectedContrastRatio": "4.5:1",
+                                "fgColor": "#545454",
+                                "fontSize": "10.5pt",
+                                "fontWeight": "normal",
+                                "missingData": null
+                            },
+                            "id": "color-contrast",
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 7.57",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"qr-link\" href=\"/users/cpf_sign_in\">Entrar com CPF</a>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "a[href$=\"cpf_sign_in\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "bgColor": "#ffffff",
+                                "contrastRatio": 7.57,
+                                "expectedContrastRatio": "4.5:1",
+                                "fgColor": "#545454",
+                                "fontSize": "10.5pt",
+                                "fontWeight": "normal",
+                                "missingData": null
+                            },
+                            "id": "color-contrast",
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 7.57",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"qr-link\" href=\"/pt/users/password/new\">Seu primeiro acesso</a>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".qr-link[href$=\"new\"]:nth-child(3)"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "bgColor": "#ffffff",
+                                "contrastRatio": 7.57,
+                                "expectedContrastRatio": "4.5:1",
+                                "fgColor": "#545454",
+                                "fontSize": "10.5pt",
+                                "fontWeight": "normal",
+                                "missingData": null
+                            },
+                            "id": "color-contrast",
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 7.57",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"qr-link\" href=\"/pt/users/password/new\">Esqueceu sua senha?</a>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".qr-link[href$=\"new\"]:nth-child(5)"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "bgColor": "#cd90ff",
+                                "contrastRatio": 9.02,
+                                "expectedContrastRatio": "4.5:1",
+                                "fgColor": "#000000",
+                                "fontSize": "10.0pt",
+                                "fontWeight": "bold",
+                                "missingData": null
+                            },
+                            "id": "color-contrast",
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 9.02",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<input type=\"submit\" name=\"commit\" value=\"Entrar\" class=\"qr-button qr-button--block qr-button--primary mt-48\" role=\"button\" data-disable-with=\"Entrar\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".qr-button"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "bgColor": "#ffffff",
+                                "contrastRatio": 7.57,
+                                "expectedContrastRatio": "4.5:1",
+                                "fgColor": "#545454",
+                                "fontSize": "11.3pt",
+                                "fontWeight": "bold",
+                                "missingData": null
+                            },
+                            "id": "color-contrast",
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 7.57",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"new_session__icon-button mt-32\" role=\"button\" href=\"/users/sso_sign_in\">Continuar com Single Sign On</a>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "a[href$=\"sso_sign_in\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "bgColor": "#ffffff",
+                                "contrastRatio": 7.57,
+                                "expectedContrastRatio": "4.5:1",
+                                "fgColor": "#545454",
+                                "fontSize": "11.3pt",
+                                "fontWeight": "bold",
+                                "missingData": null
+                            },
+                            "id": "color-contrast",
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 7.57",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<div class=\"new_session__icon-button__text\">Continuar com o Google</div>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#google-sign-in > .new_session__icon-button__text"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "bgColor": "#ffffff",
+                                "contrastRatio": 7.57,
+                                "expectedContrastRatio": "4.5:1",
+                                "fgColor": "#545454",
+                                "fontSize": "11.3pt",
+                                "fontWeight": "bold",
+                                "missingData": null
+                            },
+                            "id": "color-contrast",
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 7.57",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<div class=\"new_session__icon-button__text\">Continuar com o Slack</div>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".new_session__icon-button.mt-32[role=\"button\"]:nth-child(7) > .new_session__icon-button__text"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "bgColor": "#ffffff",
+                                "contrastRatio": 7.57,
+                                "expectedContrastRatio": "4.5:1",
+                                "fgColor": "#545454",
+                                "fontSize": "11.3pt",
+                                "fontWeight": "bold",
+                                "missingData": null
+                            },
+                            "id": "color-contrast",
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 7.57",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<div class=\"new_session__icon-button__text\">Continuar com a Apple</div>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "a[rel=\"nofollow\"] > .new_session__icon-button__text"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "bgColor": "#ffffff",
+                                "contrastRatio": 7.57,
+                                "expectedContrastRatio": "4.5:1",
+                                "fgColor": "#545454",
+                                "fontSize": "10.5pt",
+                                "fontWeight": "normal",
+                                "missingData": null
+                            },
+                            "id": "color-contrast",
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 7.57",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"qr-link\" href=\"/pt/users/sign_in\">Portugu\u00eas</a>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".mb-16 > .qr-link[href$=\"sign_in\"]:nth-child(1)"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "bgColor": "#ffffff",
+                                "contrastRatio": 7.57,
+                                "expectedContrastRatio": "4.5:1",
+                                "fgColor": "#545454",
+                                "fontSize": "10.5pt",
+                                "fontWeight": "normal",
+                                "missingData": null
+                            },
+                            "id": "color-contrast",
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 7.57",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"qr-link\" href=\"/en/users/sign_in\">English</a>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".qr-link[href$=\"sign_in\"]:nth-child(3)"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "bgColor": "#ffffff",
+                                "contrastRatio": 7.57,
+                                "expectedContrastRatio": "4.5:1",
+                                "fgColor": "#545454",
+                                "fontSize": "10.5pt",
+                                "fontWeight": "normal",
+                                "missingData": null
+                            },
+                            "id": "color-contrast",
+                            "impact": "serious",
+                            "message": "Element has sufficient color contrast of 7.57",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"qr-link\" href=\"/es/users/sign_in\">Espa\u00f1ol</a>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".qr-link[href$=\"sign_in\"]:nth-child(5)"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.color",
+                "wcag2aa",
+                "wcag143"
+            ]
+        },
+        {
+            "description": "Ensures each HTML document contains a non-empty <title> element",
+            "help": "Documents must have <title> element to aid in navigation",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/document-title?application=axeAPI",
+            "id": "document-title",
+            "impact": null,
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "doc-has-title",
+                            "impact": "serious",
+                            "message": "Document has a non-empty <title> element",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<html style=\"height: 100%\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "html"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag242"
+            ]
+        },
+        {
+            "description": "Ensures every id attribute value of active elements is unique",
+            "help": "IDs of active elements must be unique",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/duplicate-id-active?application=axeAPI",
+            "id": "duplicate-id-active",
+            "impact": null,
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "google-sign-in",
+                            "id": "duplicate-id-active",
+                            "impact": "serious",
+                            "message": "Document has no active elements that share the same id attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<button class=\"new_session__icon-button mt-32\" id=\"google-sign-in\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#google-sign-in"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.parsing",
+                "wcag2a",
+                "wcag411"
+            ]
+        },
+        {
+            "description": "Ensures every id attribute value used in ARIA and in labels is unique",
+            "help": "IDs used in ARIA and labels must be unique",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/duplicate-id-aria?application=axeAPI",
+            "id": "duplicate-id-aria",
+            "impact": null,
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "user_email",
+                            "id": "duplicate-id-aria",
+                            "impact": "critical",
+                            "message": "Document has no elements referenced with ARIA or labels that share the same id attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<input autofocus=\"autofocus\" class=\"qr-form__input\" required=\"required\" type=\"email\" name=\"user[email]\" id=\"user_email\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#user_email"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "user_password",
+                            "id": "duplicate-id-aria",
+                            "impact": "critical",
+                            "message": "Document has no elements referenced with ARIA or labels that share the same id attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<input autocomplete=\"off\" class=\"qr-form__input\" required=\"required\" type=\"password\" name=\"user[password]\" id=\"user_password\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#user_password"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.parsing",
+                "wcag2a",
+                "wcag411"
+            ]
+        },
+        {
+            "description": "Ensures every id attribute value is unique",
+            "help": "id attribute value must be unique",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/duplicate-id?application=axeAPI",
+            "id": "duplicate-id",
+            "impact": null,
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "hubspot-messages-loader",
+                            "id": "duplicate-id",
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<script src=\"https://js.usemessages.com/conversations-embed.js\" type=\"text/javascript\" id=\"hubspot-messages-loader\" data-loader=\"hs-scriptloader\" data-hsjs-portal=\"9475110\" data-hsjs-env=\"prod\" data-hsjs-hublet=\"na1\"></script>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#hubspot-messages-loader"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "cookieBanner-9475110",
+                            "id": "duplicate-id",
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<script src=\"https://js.hs-banner.com/v2/9475110/banner.js\" type=\"text/javascript\" id=\"cookieBanner-9475110\" data-cookieconsent=\"ignore\" data-hs-ignore=\"true\" data-loader=\"hs-scriptloader\" data-hsjs-portal=\"9475110\" data-hsjs-env=\"prod\" data-hsjs-hublet=\"na1\"></script>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#cookieBanner-9475110"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "hs-analytics",
+                            "id": "duplicate-id",
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<script src=\"https://js.hs-analytics.net/analytics/1746045300000/9475110.js\" type=\"text/javascript\" id=\"hs-analytics\"></script>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#hs-analytics"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "hubspot-web-interactives-loader",
+                            "id": "duplicate-id",
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<script src=\"https://js.hubspot.com/web-interactives-embed.js\" type=\"text/javascript\" id=\"hubspot-web-interactives-loader\" crossorigin=\"anonymous\" data-loader=\"hs-scriptloader\" data-hsjs-portal=\"9475110\" data-hsjs-env=\"prod\" data-hsjs-hublet=\"na1\"></script>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#hubspot-web-interactives-loader"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "hs-ads-pixel-9475110",
+                            "id": "duplicate-id",
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<script src=\"https://js.hsadspixel.net/fb.js\" type=\"text/javascript\" id=\"hs-ads-pixel-9475110\" data-ads-portal-id=\"9475110\" data-ads-env=\"prod\" data-loader=\"hs-scriptloader\" data-hsjs-portal=\"9475110\" data-hsjs-env=\"prod\" data-hsjs-hublet=\"na1\"></script>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#hs-ads-pixel-9475110"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "_goober",
+                            "id": "duplicate-id",
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<style id=\"_goober\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#_goober"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "hs-web-interactives-top-push-anchor",
+                            "id": "duplicate-id",
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<div id=\"hs-web-interactives-top-push-anchor\" class=\"go3670563033\"></div>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#hs-web-interactives-top-push-anchor"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "new_user",
+                            "id": "duplicate-id",
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<form class=\"qr-form\" id=\"new_user\" action=\"/users/sign_in\" accept-charset=\"UTF-8\" method=\"post\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#new_user"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "redirect_to",
+                            "id": "duplicate-id",
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<input type=\"hidden\" name=\"redirect_to\" id=\"redirect_to\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#redirect_to"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "locale",
+                            "id": "duplicate-id",
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<input type=\"hidden\" name=\"locale\" id=\"locale\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#locale"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "hs-script-loader",
+                            "id": "duplicate-id",
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<script src=\"//js.hs-scripts.com/9475110.js\" type=\"text/javascript\" async=\"\" defer=\"\" id=\"hs-script-loader\"></script>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#hs-script-loader"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "hs-web-interactives-top-anchor",
+                            "id": "duplicate-id",
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<div class=\"go2933276541 go2369186930\" id=\"hs-web-interactives-top-anchor\"><div id=\"hs-interactives-modal-overlay\" class=\"go1632949049\"></div></div>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#hs-web-interactives-top-anchor"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "hs-interactives-modal-overlay",
+                            "id": "duplicate-id",
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<div id=\"hs-interactives-modal-overlay\" class=\"go1632949049\"></div>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#hs-interactives-modal-overlay"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "hs-web-interactives-bottom-anchor",
+                            "id": "duplicate-id",
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<div class=\"go2933276541 go1348078617\" id=\"hs-web-interactives-bottom-anchor\"></div>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#hs-web-interactives-bottom-anchor"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "hs-web-interactives-floating-container",
+                            "id": "duplicate-id",
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<div id=\"hs-web-interactives-floating-container\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#hs-web-interactives-floating-container"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "hs-web-interactives-floating-top-left-anchor",
+                            "id": "duplicate-id",
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<div id=\"hs-web-interactives-floating-top-left-anchor\" class=\"go2417249464 go613305155\">\n  </div>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#hs-web-interactives-floating-top-left-anchor"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "hs-web-interactives-floating-top-right-anchor",
+                            "id": "duplicate-id",
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<div id=\"hs-web-interactives-floating-top-right-anchor\" class=\"go2417249464 go471583506\">\n  </div>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#hs-web-interactives-floating-top-right-anchor"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "hs-web-interactives-floating-bottom-left-anchor",
+                            "id": "duplicate-id",
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<div id=\"hs-web-interactives-floating-bottom-left-anchor\" class=\"go2417249464 go3921366393\">\n  </div>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#hs-web-interactives-floating-bottom-left-anchor"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": "hs-web-interactives-floating-bottom-right-anchor",
+                            "id": "duplicate-id",
+                            "impact": "minor",
+                            "message": "Document has no static elements that share the same id attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<div id=\"hs-web-interactives-floating-bottom-right-anchor\" class=\"go2417249464 go3967842156\">\n  </div>",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#hs-web-interactives-floating-bottom-right-anchor"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.parsing",
+                "wcag2a",
+                "wcag411"
+            ]
+        },
+        {
+            "description": "Ensures <img> elements have alternate text or a role of none or presentation",
+            "help": "Images must have alternate text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/image-alt?application=axeAPI",
+            "id": "image-alt",
+            "impact": null,
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "has-alt",
+                            "impact": "critical",
+                            "message": "Element has an alt attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<img alt=\"Qulture Rocks\" class=\"sign-in__logo mt-72 mb-48\" src=\"https://app.qulture.rocks/assets/sign_in/logo-e8f992934712f62e8a1b1d32391a9dbd08e0c4d8b163f8171d1498eeb2a9bf83.svg\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".sign-in__logo"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "has-alt",
+                            "impact": "critical",
+                            "message": "Element has an alt attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<img class=\"new_session__icon-button__icon\" alt=\"\" ssl_detected=\"true\" src=\"/assets/google-logo-885397e97fffe3e10ca4acd9774a5f778a5aba1776cefa9c9e0d07ff971e29a1.svg\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "#google-sign-in > .new_session__icon-button__icon[alt=\"\"][ssl_detected=\"true\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "has-alt",
+                            "impact": "critical",
+                            "message": "Element has an alt attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<img class=\"new_session__icon-button__icon\" alt=\"\" ssl_detected=\"true\" src=\"/assets/slack-logo-8ca82fd9c457a18ed1d15146d12fbb52a0699a6876c9e0b1b9c274935085ecca.svg\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".new_session__icon-button.mt-32[role=\"button\"]:nth-child(7) > .new_session__icon-button__icon[alt=\"\"][ssl_detected=\"true\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "has-alt",
+                            "impact": "critical",
+                            "message": "Element has an alt attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<img class=\"new_session__icon-button__icon\" height=\"20\" alt=\"\" ssl_detected=\"true\" src=\"/assets/apple-logo-eda9349917929e6702555f299ed3813069834ebdf2ecad4f3f73846017f80710.svg\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "img[height=\"\\32 0\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "has-alt",
+                            "impact": "critical",
+                            "message": "Element has an alt attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<img alt=\"Unlock your team's potential\" class=\"sign-in__mission\" src=\"https://app.qulture.rocks/assets/sign_in/sign_in_mission-042df4ad2c69d0244cda7f6b5eef290ad050ca5cd3bcdabdbe37e855a21ba756.svg\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        ".sign-in__mission"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag111",
+                "section508",
+                "section508.22.a"
+            ]
+        },
+        {
+            "description": "Ensure button and link text is not repeated as image alternative",
+            "help": "Text of buttons and links should not be repeated in the image alternative",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/image-redundant-alt?application=axeAPI",
+            "id": "image-redundant-alt",
+            "impact": null,
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [],
+                    "html": "<a class=\"qr-link\" href=\"/users/cpf_sign_in\">Entrar com CPF</a>",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "duplicate-img-label",
+                            "impact": "minor",
+                            "message": "Element does not duplicate existing text in <img> alt text",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        "a[href$=\"cpf_sign_in\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [],
+                    "html": "<a class=\"qr-link\" href=\"/pt/users/password/new\">Seu primeiro acesso</a>",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "duplicate-img-label",
+                            "impact": "minor",
+                            "message": "Element does not duplicate existing text in <img> alt text",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        ".qr-link[href$=\"new\"]:nth-child(3)"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [],
+                    "html": "<a class=\"qr-link\" href=\"/pt/users/password/new\">Esqueceu sua senha?</a>",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "duplicate-img-label",
+                            "impact": "minor",
+                            "message": "Element does not duplicate existing text in <img> alt text",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        ".qr-link[href$=\"new\"]:nth-child(5)"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [],
+                    "html": "<input type=\"submit\" name=\"commit\" value=\"Entrar\" class=\"qr-button qr-button--block qr-button--primary mt-48\" role=\"button\" data-disable-with=\"Entrar\">",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "duplicate-img-label",
+                            "impact": "minor",
+                            "message": "Element does not duplicate existing text in <img> alt text",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        ".qr-button"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [],
+                    "html": "<a class=\"new_session__icon-button mt-32\" role=\"button\" href=\"/users/sso_sign_in\">Continuar com Single Sign On</a>",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "duplicate-img-label",
+                            "impact": "minor",
+                            "message": "Element does not duplicate existing text in <img> alt text",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        "a[href$=\"sso_sign_in\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [],
+                    "html": "<button class=\"new_session__icon-button mt-32\" id=\"google-sign-in\">",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "duplicate-img-label",
+                            "impact": "minor",
+                            "message": "Element does not duplicate existing text in <img> alt text",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        "#google-sign-in"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [],
+                    "html": "<a class=\"new_session__icon-button mt-32\" role=\"button\" href=\"https://slack.com/oauth/v2/authorize?user_scope=identity.basic,identity.email,identity.avatar&amp;client_id=7381704720.299629824786\">",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "duplicate-img-label",
+                            "impact": "minor",
+                            "message": "Element does not duplicate existing text in <img> alt text",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        ".new_session__icon-button.mt-32[role=\"button\"]:nth-child(7)"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [],
+                    "html": "<a class=\"new_session__icon-button mt-32\" role=\"button\" rel=\"nofollow\" data-method=\"post\" href=\"/users/auth/apple\">",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "duplicate-img-label",
+                            "impact": "minor",
+                            "message": "Element does not duplicate existing text in <img> alt text",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        "a[rel=\"nofollow\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [],
+                    "html": "<a class=\"qr-link\" href=\"/pt/users/sign_in\">Portugu\u00eas</a>",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "duplicate-img-label",
+                            "impact": "minor",
+                            "message": "Element does not duplicate existing text in <img> alt text",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        ".mb-16 > .qr-link[href$=\"sign_in\"]:nth-child(1)"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [],
+                    "html": "<a class=\"qr-link\" href=\"/en/users/sign_in\">English</a>",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "duplicate-img-label",
+                            "impact": "minor",
+                            "message": "Element does not duplicate existing text in <img> alt text",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        ".qr-link[href$=\"sign_in\"]:nth-child(3)"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [],
+                    "html": "<a class=\"qr-link\" href=\"/es/users/sign_in\">Espa\u00f1ol</a>",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "duplicate-img-label",
+                            "impact": "minor",
+                            "message": "Element does not duplicate existing text in <img> alt text",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        ".qr-link[href$=\"sign_in\"]:nth-child(5)"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.text-alternatives",
+                "best-practice"
+            ]
+        },
+        {
+            "description": "Ensures that every form element is not solely labeled using the title or aria-describedby attributes",
+            "help": "Form elements should have a visible label",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/label-title-only?application=axeAPI",
+            "id": "label-title-only",
+            "impact": null,
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [],
+                    "html": "<input autofocus=\"autofocus\" class=\"qr-form__input\" required=\"required\" type=\"email\" name=\"user[email]\" id=\"user_email\">",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "title-only",
+                            "impact": "serious",
+                            "message": "Form element does not solely use title attribute for its label",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        "#user_email"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [],
+                    "html": "<input autocomplete=\"off\" class=\"qr-form__input\" required=\"required\" type=\"password\" name=\"user[password]\" id=\"user_password\">",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "title-only",
+                            "impact": "serious",
+                            "message": "Form element does not solely use title attribute for its label",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        "#user_password"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.forms",
+                "best-practice"
+            ]
+        },
+        {
+            "description": "Ensures every form element has a label",
+            "help": "Form elements must have labels",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/label?application=axeAPI",
+            "id": "label",
+            "impact": null,
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "explicit-label",
+                            "impact": "critical",
+                            "message": "Form element has an explicit <label>",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<input autofocus=\"autofocus\" class=\"qr-form__input\" required=\"required\" type=\"email\" name=\"user[email]\" id=\"user_email\">",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "multiple-label",
+                            "impact": "serious",
+                            "message": "Form element does not have multiple <label> elements",
+                            "relatedNodes": [
+                                {
+                                    "html": "<label class=\"qr-form__label\" for=\"user_email\">Email</label>",
+                                    "target": [
+                                        "label[for=\"user_email\"]"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "data": null,
+                            "id": "hidden-explicit-label",
+                            "impact": "critical",
+                            "message": "Form element has a visible explicit <label>",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        "#user_email"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "explicit-label",
+                            "impact": "critical",
+                            "message": "Form element has an explicit <label>",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<input autocomplete=\"off\" class=\"qr-form__input\" required=\"required\" type=\"password\" name=\"user[password]\" id=\"user_password\">",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "multiple-label",
+                            "impact": "serious",
+                            "message": "Form element does not have multiple <label> elements",
+                            "relatedNodes": [
+                                {
+                                    "html": "<label class=\"qr-form__label\" for=\"user_password\">Senha</label>",
+                                    "target": [
+                                        "label[for=\"user_password\"]"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "data": null,
+                            "id": "hidden-explicit-label",
+                            "impact": "critical",
+                            "message": "Form element has a visible explicit <label>",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        "#user_password"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.forms",
+                "wcag2a",
+                "wcag332",
+                "wcag131",
+                "section508",
+                "section508.22.n"
+            ]
+        },
+        {
+            "description": "Ensures the page has at most one banner landmark",
+            "help": "Page must not have more than one banner landmark",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/landmark-no-duplicate-banner?application=axeAPI",
+            "id": "landmark-no-duplicate-banner",
+            "impact": null,
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "page-no-duplicate-banner",
+                            "impact": "moderate",
+                            "message": "Document has no more than one banner landmark",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<html style=\"height: 100%\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "html"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.semantics",
+                "best-practice"
+            ]
+        },
+        {
+            "description": "Ensures the page has at most one contentinfo landmark",
+            "help": "Page must not have more than one contentinfo landmark",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/landmark-no-duplicate-contentinfo?application=axeAPI",
+            "id": "landmark-no-duplicate-contentinfo",
+            "impact": null,
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "page-no-duplicate-contentinfo",
+                            "impact": "moderate",
+                            "message": "Page does not have more than one contentinfo landmark",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<html style=\"height: 100%\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "html"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.semantics",
+                "best-practice"
+            ]
+        },
+        {
+            "description": "Ensures links have discernible text",
+            "help": "Links must have discernible text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/link-name?application=axeAPI",
+            "id": "link-name",
+            "impact": null,
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "has-visible-text",
+                            "impact": "minor",
+                            "message": "Element has text that is visible to screen readers",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"qr-link\" href=\"/users/cpf_sign_in\">Entrar com CPF</a>",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "focusable-no-name",
+                            "impact": "serious",
+                            "message": "Element is not in tab order or has accessible text",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        "a[href$=\"cpf_sign_in\"]"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "has-visible-text",
+                            "impact": "minor",
+                            "message": "Element has text that is visible to screen readers",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"qr-link\" href=\"/pt/users/password/new\">Seu primeiro acesso</a>",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "focusable-no-name",
+                            "impact": "serious",
+                            "message": "Element is not in tab order or has accessible text",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        ".qr-link[href$=\"new\"]:nth-child(3)"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "has-visible-text",
+                            "impact": "minor",
+                            "message": "Element has text that is visible to screen readers",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"qr-link\" href=\"/pt/users/password/new\">Esqueceu sua senha?</a>",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "focusable-no-name",
+                            "impact": "serious",
+                            "message": "Element is not in tab order or has accessible text",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        ".qr-link[href$=\"new\"]:nth-child(5)"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "has-visible-text",
+                            "impact": "minor",
+                            "message": "Element has text that is visible to screen readers",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"qr-link\" href=\"/pt/users/sign_in\">Portugu\u00eas</a>",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "focusable-no-name",
+                            "impact": "serious",
+                            "message": "Element is not in tab order or has accessible text",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        ".mb-16 > .qr-link[href$=\"sign_in\"]:nth-child(1)"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "has-visible-text",
+                            "impact": "minor",
+                            "message": "Element has text that is visible to screen readers",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"qr-link\" href=\"/en/users/sign_in\">English</a>",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "focusable-no-name",
+                            "impact": "serious",
+                            "message": "Element is not in tab order or has accessible text",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        ".qr-link[href$=\"sign_in\"]:nth-child(3)"
+                    ]
+                },
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "has-visible-text",
+                            "impact": "minor",
+                            "message": "Element has text that is visible to screen readers",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<a class=\"qr-link\" href=\"/es/users/sign_in\">Espa\u00f1ol</a>",
+                    "impact": null,
+                    "none": [
+                        {
+                            "data": null,
+                            "id": "focusable-no-name",
+                            "impact": "serious",
+                            "message": "Element is not in tab order or has accessible text",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "target": [
+                        ".qr-link[href$=\"sign_in\"]:nth-child(5)"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.name-role-value",
+                "wcag2a",
+                "wcag412",
+                "wcag244",
+                "section508",
+                "section508.22.a"
+            ]
+        },
+        {
+            "description": "Ensures <meta name=\"viewport\"> can scale a significant amount",
+            "help": "Users should be able to zoom and scale the text up to 500%",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/meta-viewport-large?application=axeAPI",
+            "id": "meta-viewport-large",
+            "impact": null,
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "meta-viewport-large",
+                            "impact": "minor",
+                            "message": "<meta> tag does not prevent significant zooming on mobile devices",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<meta content=\"width=device-width, initial-scale=1.0\" name=\"viewport\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "meta[name=\"viewport\"]"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.sensory-and-visual-cues",
+                "best-practice"
+            ]
+        },
+        {
+            "description": "Ensures <meta name=\"viewport\"> does not disable text scaling and zooming",
+            "help": "Zooming and scaling must not be disabled",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/meta-viewport?application=axeAPI",
+            "id": "meta-viewport",
+            "impact": null,
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "meta-viewport",
+                            "impact": "critical",
+                            "message": "<meta> tag does not disable zooming on mobile devices",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "html": "<meta content=\"width=device-width, initial-scale=1.0\" name=\"viewport\">",
+                    "impact": null,
+                    "none": [],
+                    "target": [
+                        "meta[name=\"viewport\"]"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.sensory-and-visual-cues",
+                "wcag2aa",
+                "wcag144"
+            ]
+        }
+    ],
+    "timestamp": "2025-04-30T20:36:39.252Z",
+    "url": "https://app.qulture.rocks/users/sign_in",
+    "violations": [
+        {
+            "description": "Ensures role attribute has an appropriate value for the element",
+            "help": "ARIA role must be appropriate for the element",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/aria-allowed-role?application=axeAPI",
+            "id": "aria-allowed-role",
+            "impact": "minor",
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": [
+                                "button"
+                            ],
+                            "id": "aria-allowed-role",
+                            "impact": "minor",
+                            "message": "role button  is not allowed for given element",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "failureSummary": "Fix any of the following:\n  role button  is not allowed for given element",
+                    "html": "<input type=\"submit\" name=\"commit\" value=\"Entrar\" class=\"qr-button qr-button--block qr-button--primary mt-48\" role=\"button\" data-disable-with=\"Entrar\">",
+                    "impact": "minor",
+                    "none": [],
+                    "target": [
+                        ".qr-button"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.aria",
+                "best-practice"
+            ]
+        },
+        {
+            "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
+            "help": "autocomplete attribute must be used correctly",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/autocomplete-valid?application=axeAPI",
+            "id": "autocomplete-valid",
+            "impact": "serious",
+            "nodes": [
+                {
+                    "all": [
+                        {
+                            "data": null,
+                            "id": "autocomplete-appropriate",
+                            "impact": "serious",
+                            "message": "the autocomplete value is inappropriate for this type of input",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "any": [],
+                    "failureSummary": "Fix all of the following:\n  the autocomplete value is inappropriate for this type of input",
+                    "html": "<input autocomplete=\"off\" class=\"qr-form__input\" required=\"required\" type=\"password\" name=\"user[password]\" id=\"user_password\">",
+                    "impact": "serious",
+                    "none": [],
+                    "target": [
+                        "#user_password"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.forms",
+                "wcag21aa",
+                "wcag135"
+            ]
+        },
+        {
+            "description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+            "help": "Page must have means to bypass repeated blocks",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/bypass?application=axeAPI",
+            "id": "bypass",
+            "impact": "serious",
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "internal-link-present",
+                            "impact": "serious",
+                            "message": "No valid skip link found",
+                            "relatedNodes": []
+                        },
+                        {
+                            "data": null,
+                            "id": "header-present",
+                            "impact": "serious",
+                            "message": "Page does not have a header",
+                            "relatedNodes": []
+                        },
+                        {
+                            "data": null,
+                            "id": "landmark",
+                            "impact": "serious",
+                            "message": "Page does not have a landmark region",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "failureSummary": "Fix any of the following:\n  No valid skip link found\n  Page does not have a header\n  Page does not have a landmark region",
+                    "html": "<html style=\"height: 100%\">",
+                    "impact": "serious",
+                    "none": [],
+                    "target": [
+                        "html"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.keyboard",
+                "wcag2a",
+                "wcag241",
+                "section508",
+                "section508.22.o"
+            ]
+        },
+        {
+            "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+            "help": "Elements must have sufficient color contrast",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/color-contrast?application=axeAPI",
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": {
+                                "bgColor": "#ffffff",
+                                "contrastRatio": 1.83,
+                                "expectedContrastRatio": "4.5:1",
+                                "fgColor": "#bfbfbf",
+                                "fontSize": "12.0pt",
+                                "fontWeight": "bold",
+                                "missingData": null
+                            },
+                            "id": "color-contrast",
+                            "impact": "serious",
+                            "message": "Element has insufficient color contrast of 1.83 (foreground color: #bfbfbf, background color: #ffffff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1",
+                            "relatedNodes": [
+                                {
+                                    "html": "<div class=\"sign-in__content\">",
+                                    "target": [
+                                        ".sign-in__content"
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.83 (foreground color: #bfbfbf, background color: #ffffff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1",
+                    "html": "<div class=\"new_session__divider-text\">ou</div>",
+                    "impact": "serious",
+                    "none": [],
+                    "target": [
+                        ".new_session__divider-text"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.color",
+                "wcag2aa",
+                "wcag143"
+            ]
+        },
+        {
+            "description": "Ensures every HTML document has a lang attribute",
+            "help": "<html> element must have a lang attribute",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/html-has-lang?application=axeAPI",
+            "id": "html-has-lang",
+            "impact": "serious",
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "has-lang",
+                            "impact": "serious",
+                            "message": "The <html> element does not have a lang attribute",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "failureSummary": "Fix any of the following:\n  The <html> element does not have a lang attribute",
+                    "html": "<html style=\"height: 100%\">",
+                    "impact": "serious",
+                    "none": [],
+                    "target": [
+                        "html"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.language",
+                "wcag2a",
+                "wcag311"
+            ]
+        },
+        {
+            "description": "Ensures the page has only one main landmark and each iframe in the page has at most one main landmark",
+            "help": "Page must have one main landmark",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/landmark-one-main?application=axeAPI",
+            "id": "landmark-one-main",
+            "impact": "moderate",
+            "nodes": [
+                {
+                    "all": [
+                        {
+                            "data": null,
+                            "id": "page-has-main",
+                            "impact": "moderate",
+                            "message": "Page does not have a main landmark",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "any": [],
+                    "failureSummary": "Fix all of the following:\n  Page does not have a main landmark",
+                    "html": "<html style=\"height: 100%\">",
+                    "impact": "moderate",
+                    "none": [],
+                    "target": [
+                        "html"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.semantics",
+                "best-practice"
+            ]
+        },
+        {
+            "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+            "help": "Page must contain a level-one heading",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/page-has-heading-one?application=axeAPI",
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "nodes": [
+                {
+                    "all": [
+                        {
+                            "data": null,
+                            "id": "page-has-heading-one",
+                            "impact": "moderate",
+                            "message": "Page must have a level-one heading",
+                            "relatedNodes": []
+                        }
+                    ],
+                    "any": [],
+                    "failureSummary": "Fix all of the following:\n  Page must have a level-one heading",
+                    "html": "<html style=\"height: 100%\">",
+                    "impact": "moderate",
+                    "none": [],
+                    "target": [
+                        "html"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.semantics",
+                "best-practice"
+            ]
+        },
+        {
+            "description": "Ensures all page content is contained by landmarks",
+            "help": "All page content must be contained by landmarks",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/region?application=axeAPI",
+            "id": "region",
+            "impact": "moderate",
+            "nodes": [
+                {
+                    "all": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "id": "region",
+                            "impact": "moderate",
+                            "message": "Some page content is not contained by landmarks",
+                            "relatedNodes": [
+                                {
+                                    "html": "<img alt=\"Qulture Rocks\" class=\"sign-in__logo mt-72 mb-48\" src=\"https://app.qulture.rocks/assets/sign_in/logo-e8f992934712f62e8a1b1d32391a9dbd08e0c4d8b163f8171d1498eeb2a9bf83.svg\">",
+                                    "target": [
+                                        ".sign-in__logo"
+                                    ]
+                                },
+                                {
+                                    "html": "<label class=\"qr-form__label\" for=\"user_email\">Email</label>",
+                                    "target": [
+                                        "label[for=\"user_email\"]"
+                                    ]
+                                },
+                                {
+                                    "html": "<input autofocus=\"autofocus\" class=\"qr-form__input\" required=\"required\" type=\"email\" name=\"user[email]\" id=\"user_email\">",
+                                    "target": [
+                                        "#user_email"
+                                    ]
+                                },
+                                {
+                                    "html": "<label class=\"qr-form__label\" for=\"user_password\">Senha</label>",
+                                    "target": [
+                                        "label[for=\"user_password\"]"
+                                    ]
+                                },
+                                {
+                                    "html": "<input autocomplete=\"off\" class=\"qr-form__input\" required=\"required\" type=\"password\" name=\"user[password]\" id=\"user_password\">",
+                                    "target": [
+                                        "#user_password"
+                                    ]
+                                },
+                                {
+                                    "html": "<a class=\"qr-link\" href=\"/users/cpf_sign_in\">Entrar com CPF</a>",
+                                    "target": [
+                                        "a[href$=\"cpf_sign_in\"]"
+                                    ]
+                                },
+                                {
+                                    "html": "<a class=\"qr-link\" href=\"/pt/users/password/new\">Seu primeiro acesso</a>",
+                                    "target": [
+                                        ".qr-link[href$=\"new\"]:nth-child(3)"
+                                    ]
+                                },
+                                {
+                                    "html": "<a class=\"qr-link\" href=\"/pt/users/password/new\">Esqueceu sua senha?</a>",
+                                    "target": [
+                                        ".qr-link[href$=\"new\"]:nth-child(5)"
+                                    ]
+                                },
+                                {
+                                    "html": "<div class=\"new_session__divider-text\">ou</div>",
+                                    "target": [
+                                        ".new_session__divider-text"
+                                    ]
+                                },
+                                {
+                                    "html": "<a class=\"new_session__icon-button mt-32\" role=\"button\" href=\"/users/sso_sign_in\">Continuar com Single Sign On</a>",
+                                    "target": [
+                                        "a[href$=\"sso_sign_in\"]"
+                                    ]
+                                },
+                                {
+                                    "html": "<button class=\"new_session__icon-button mt-32\" id=\"google-sign-in\">",
+                                    "target": [
+                                        "#google-sign-in"
+                                    ]
+                                },
+                                {
+                                    "html": "<img class=\"new_session__icon-button__icon\" alt=\"\" ssl_detected=\"true\" src=\"/assets/slack-logo-8ca82fd9c457a18ed1d15146d12fbb52a0699a6876c9e0b1b9c274935085ecca.svg\">",
+                                    "target": [
+                                        ".new_session__icon-button.mt-32[role=\"button\"]:nth-child(7) > .new_session__icon-button__icon[alt=\"\"][ssl_detected=\"true\"]"
+                                    ]
+                                },
+                                {
+                                    "html": "<div class=\"new_session__icon-button__text\">Continuar com o Slack</div>",
+                                    "target": [
+                                        ".new_session__icon-button.mt-32[role=\"button\"]:nth-child(7) > .new_session__icon-button__text"
+                                    ]
+                                },
+                                {
+                                    "html": "<img class=\"new_session__icon-button__icon\" height=\"20\" alt=\"\" ssl_detected=\"true\" src=\"/assets/apple-logo-eda9349917929e6702555f299ed3813069834ebdf2ecad4f3f73846017f80710.svg\">",
+                                    "target": [
+                                        "img[height=\"\\32 0\"]"
+                                    ]
+                                },
+                                {
+                                    "html": "<div class=\"new_session__icon-button__text\">Continuar com a Apple</div>",
+                                    "target": [
+                                        "a[rel=\"nofollow\"] > .new_session__icon-button__text"
+                                    ]
+                                },
+                                {
+                                    "html": "<a class=\"qr-link\" href=\"/pt/users/sign_in\">Portugu\u00eas</a>",
+                                    "target": [
+                                        ".mb-16 > .qr-link[href$=\"sign_in\"]:nth-child(1)"
+                                    ]
+                                },
+                                {
+                                    "html": "<a class=\"qr-link\" href=\"/en/users/sign_in\">English</a>",
+                                    "target": [
+                                        ".qr-link[href$=\"sign_in\"]:nth-child(3)"
+                                    ]
+                                },
+                                {
+                                    "html": "<a class=\"qr-link\" href=\"/es/users/sign_in\">Espa\u00f1ol</a>",
+                                    "target": [
+                                        ".qr-link[href$=\"sign_in\"]:nth-child(5)"
+                                    ]
+                                },
+                                {
+                                    "html": "<img alt=\"Unlock your team's potential\" class=\"sign-in__mission\" src=\"https://app.qulture.rocks/assets/sign_in/sign_in_mission-042df4ad2c69d0244cda7f6b5eef290ad050ca5cd3bcdabdbe37e855a21ba756.svg\">",
+                                    "target": [
+                                        ".sign-in__mission"
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                    "html": "<html style=\"height: 100%\">",
+                    "impact": "moderate",
+                    "none": [],
+                    "target": [
+                        "html"
+                    ]
+                }
+            ],
+            "tags": [
+                "cat.keyboard",
+                "best-practice"
+            ]
+        }
+    ]
+}
