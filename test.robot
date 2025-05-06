@@ -4,7 +4,7 @@ Library    AxeLibrary
 
 *** Test Cases ***
 Qulture Rocks Accessibility Test
-   Open Browser    https://app.qulture.rocks/    Chrome
+   Open Browser    https://app.qulture.rocks/    Headless Chrome
    
    # execute accessibility tests
    &{results}=    Run Accessibility Tests    qulture.json
