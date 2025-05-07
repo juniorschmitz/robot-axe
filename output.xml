@@ -1,30 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-04-30T17:36:23.779043" rpa="false" schemaversion="5">
-<suite id="s1" name="Test" source="C:\Users\jacques.schmitz\Desktop\robot axe\test.robot">
-<test id="s1-t1" name="Google Accessibility Test" line="6">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-07T00:58:00.153015" rpa="false" schemaversion="5">
+<suite id="s1" name="Keyboard Navigation Test &amp; Test">
+<suite id="s1-s1" name="Keyboard Navigation Test" source="C:\Users\jacques.schmitz\Desktop\robot axe\keyboard_navigation_test.robot">
+<test id="s1-s1-t1" name="Qulture Rocks Keyboard Navigation Test" line="24">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-04-30T17:36:23.952852" level="INFO">Opening browser 'Chrome' to base url 'https://app.qulture.rocks/'.</msg>
-<arg>https://app.qulture.rocks/</arg>
-<arg>Chrome</arg>
+<msg time="2025-05-07T00:58:00.325099" level="INFO">Opening browser 'chrome' to base url 'https://app.qulture.rocks/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<arg>chrome_options=${HEADLESS_ARGS}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-04-30T17:36:23.952663" elapsed="15.224126"/>
+<status status="PASS" start="2025-05-07T00:58:00.324463" elapsed="6.985124"/>
 </kw>
 <kw name="Run Accessibility Tests" owner="AxeLibrary">
-<msg time="2025-04-30T17:36:39.276127" level="INFO">{'inapplicable': 38, 'incomplete': 0, 'passes': 21, 'violations': 8}</msg>
-<msg time="2025-04-30T17:36:39.276597" level="INFO">&amp;{results} = { inapplicable=38 | incomplete=0 | passes=21 | violations=8 }</msg>
+<msg time="2025-05-07T00:58:07.390623" level="INFO">{'inapplicable': 38, 'incomplete': 0, 'passes': 21, 'violations': 8}</msg>
+<msg time="2025-05-07T00:58:07.390905" level="INFO">&amp;{results} = { inapplicable=38 | incomplete=0 | passes=21 | violations=8 }</msg>
 <var>&amp;{results}</var>
-<arg>qulture.json</arg>
+<arg>keyboard-test.json</arg>
 <doc>Executes accessibility tests in current page by injecting axe-core javascript and write results into `result_file` (json). Return result statisitics</doc>
-<status status="PASS" start="2025-04-30T17:36:39.177273" elapsed="0.099377"/>
+<status status="PASS" start="2025-05-07T00:58:07.310193" elapsed="0.080739"/>
 </kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-07T00:58:07.391948" level="INFO">${violations_count} = 8</msg>
+<var>${violations_count}</var>
+<arg>${results.violations}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-07T00:58:07.391520" elapsed="0.000453"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-04-30T17:36:39.277711" level="INFO">Violations Count: 8</msg>
-<arg>Violations Count: ${results.violations}</arg>
+<msg time="2025-05-07T00:58:07.392547" level="INFO">Found 8 keyboard navigation issues</msg>
+<arg>Found ${violations_count} keyboard navigation issues</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-30T17:36:39.277115" elapsed="0.000672"/>
+<status status="PASS" start="2025-05-07T00:58:07.392424" elapsed="0.000157"/>
+</kw>
+<arg>${violations_count} &gt; 0</arg>
+<arg>Log</arg>
+<arg>Found ${violations_count} keyboard navigation issues</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-05-07T00:58:07.392161" elapsed="0.000460"/>
 </kw>
 <kw name="Log Readable Accessibility Result" owner="AxeLibrary">
-<msg time="2025-04-30T17:36:39.278299" level="INFO" html="true">
+<msg time="2025-05-07T00:58:07.392854" level="INFO" html="true">
                 &lt;style&gt;
                     #demo table, #demo th, #demo td{
                         border: 1px dotted black;
@@ -56,7 +72,7 @@
                     &lt;/tr&gt;
                 &lt;/table&gt;
                 </msg>
-<msg time="2025-04-30T17:36:39.278363" level="INFO" html="true">
+<msg time="2025-05-07T00:58:07.392889" level="INFO" html="true">
                 &lt;style&gt;
                     #demo table, #demo th, #demo td{
                         border: 1px dotted black;
@@ -88,7 +104,7 @@
                     &lt;/tr&gt;
                 &lt;/table&gt;
                 </msg>
-<msg time="2025-04-30T17:36:39.278419" level="INFO" html="true">
+<msg time="2025-05-07T00:58:07.392917" level="INFO" html="true">
                 &lt;style&gt;
                     #demo table, #demo th, #demo td{
                         border: 1px dotted black;
@@ -122,7 +138,7 @@
                     &lt;/tr&gt;
                 &lt;/table&gt;
                 </msg>
-<msg time="2025-04-30T17:36:39.278465" level="INFO" html="true">
+<msg time="2025-05-07T00:58:07.392943" level="INFO" html="true">
                 &lt;style&gt;
                     #demo table, #demo th, #demo td{
                         border: 1px dotted black;
@@ -154,7 +170,7 @@
                     &lt;/tr&gt;
                 &lt;/table&gt;
                 </msg>
-<msg time="2025-04-30T17:36:39.278816" level="INFO" html="true">
+<msg time="2025-05-07T00:58:07.393162" level="INFO" html="true">
                 &lt;style&gt;
                     #demo table, #demo th, #demo td{
                         border: 1px dotted black;
@@ -186,7 +202,7 @@
                     &lt;/tr&gt;
                 &lt;/table&gt;
                 </msg>
-<msg time="2025-04-30T17:36:39.278894" level="INFO" html="true">
+<msg time="2025-05-07T00:58:07.393194" level="INFO" html="true">
                 &lt;style&gt;
                     #demo table, #demo th, #demo td{
                         border: 1px dotted black;
@@ -218,7 +234,7 @@
                     &lt;/tr&gt;
                 &lt;/table&gt;
                 </msg>
-<msg time="2025-04-30T17:36:39.278945" level="INFO" html="true">
+<msg time="2025-05-07T00:58:07.393227" level="INFO" html="true">
                 &lt;style&gt;
                     #demo table, #demo th, #demo td{
                         border: 1px dotted black;
@@ -250,7 +266,7 @@
                     &lt;/tr&gt;
                 &lt;/table&gt;
                 </msg>
-<msg time="2025-04-30T17:36:39.278989" level="INFO" html="true">
+<msg time="2025-05-07T00:58:07.393252" level="INFO" html="true">
                 &lt;style&gt;
                     #demo table, #demo th, #demo td{
                         border: 1px dotted black;
@@ -284,24 +300,566 @@
                 </msg>
 <arg>violations</arg>
 <doc>Inserts readable accessibility result into `log.html` based on given `type`. Need to be used after `Run Accessibility Tests` keyword</doc>
-<status status="PASS" start="2025-04-30T17:36:39.278093" elapsed="0.000967"/>
+<status status="PASS" start="2025-05-07T00:58:07.392748" elapsed="0.000539"/>
+</kw>
+<kw name="Tab Navigation">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-05-07T00:58:07.394076" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2025-05-07T00:58:07.394145" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2025-05-07T00:58:07.394175" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-05-07T00:58:07.393740" elapsed="0.006842"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T00:58:09.401407" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T00:58:07.400726" elapsed="2.000915"/>
+</kw>
+<status status="PASS" start="2025-05-07T00:58:07.393530" elapsed="2.008616"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>[Step 1] After 1st TAB press:</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T00:58:09.402728" elapsed="0.000600"/>
+</kw>
+<kw name="Log Focused Element Info">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-05-07T00:58:09.405084" level="INFO">Executing JavaScript:
+return document.activeElement.tagName || ''
+Without any arguments.</msg>
+<msg time="2025-05-07T00:58:09.420006" level="INFO">${tag} = INPUT</msg>
+<var>${tag}</var>
+<arg>return document.activeElement.tagName || ''</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-05-07T00:58:09.404344" elapsed="0.015732"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-05-07T00:58:09.420789" level="INFO">Executing JavaScript:
+return document.activeElement.className || ''
+Without any arguments.</msg>
+<msg time="2025-05-07T00:58:09.429462" level="INFO">${cls} = qr-form__input</msg>
+<var>${cls}</var>
+<arg>return document.activeElement.className || ''</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-05-07T00:58:09.420308" elapsed="0.009229"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-05-07T00:58:09.430365" level="INFO">Executing JavaScript:
+return document.activeElement.id || ''
+Without any arguments.</msg>
+<msg time="2025-05-07T00:58:09.437635" level="INFO">${id} = user_password</msg>
+<var>${id}</var>
+<arg>return document.activeElement.id || ''</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-05-07T00:58:09.429806" elapsed="0.007869"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-05-07T00:58:09.438096" level="INFO">Executing JavaScript:
+return document.activeElement.textContent || ''
+Without any arguments.</msg>
+<msg time="2025-05-07T00:58:09.442874" level="INFO">${text} = </msg>
+<var>${text}</var>
+<arg>return document.activeElement.textContent || ''</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-05-07T00:58:09.437824" elapsed="0.005104"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-05-07T00:58:09.443559" level="INFO">Executing JavaScript:
+return document.activeElement.value || ''
+Without any arguments.</msg>
+<msg time="2025-05-07T00:58:09.448916" level="INFO">${value} = </msg>
+<var>${value}</var>
+<arg>return document.activeElement.value || ''</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-05-07T00:58:09.443109" elapsed="0.005890"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Focused Element:\n - Tag: ${tag}\n - ID: ${id}\n - Class: ${cls}\n - Text: ${text}\n - Value: ${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T00:58:09.449275" elapsed="0.000790"/>
+</kw>
+<status status="PASS" start="2025-05-07T00:58:09.403841" elapsed="0.046367"/>
+</kw>
+<kw name="Repeat Keyword" owner="BuiltIn">
+<msg time="2025-05-07T00:58:09.450621" level="INFO">Repeating keyword, round 1/3.</msg>
+<kw name="Tab Navigation">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-05-07T00:58:09.451136" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2025-05-07T00:58:09.451196" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2025-05-07T00:58:09.451223" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-05-07T00:58:09.450894" elapsed="0.016674"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T00:58:11.468096" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T00:58:09.467724" elapsed="2.000663"/>
+</kw>
+<status status="PASS" start="2025-05-07T00:58:09.450727" elapsed="2.018072"/>
+</kw>
+<msg time="2025-05-07T00:58:11.468903" level="INFO">Repeating keyword, round 2/3.</msg>
+<kw name="Tab Navigation">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-05-07T00:58:11.470372" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2025-05-07T00:58:11.470507" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2025-05-07T00:58:11.470573" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-05-07T00:58:11.469755" elapsed="0.024667"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T00:58:13.495409" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T00:58:11.494724" elapsed="2.000915"/>
+</kw>
+<status status="PASS" start="2025-05-07T00:58:11.469224" elapsed="2.026621"/>
+</kw>
+<msg time="2025-05-07T00:58:13.495929" level="INFO">Repeating keyword, round 3/3.</msg>
+<kw name="Tab Navigation">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-05-07T00:58:13.497496" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2025-05-07T00:58:13.497703" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2025-05-07T00:58:13.497786" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-05-07T00:58:13.496760" elapsed="0.014522"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T00:58:15.512342" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T00:58:13.511595" elapsed="2.000985"/>
+</kw>
+<status status="PASS" start="2025-05-07T00:58:13.496232" elapsed="2.016593"/>
+</kw>
+<arg>3</arg>
+<arg>Tab Navigation</arg>
+<doc>Executes the specified keyword multiple times.</doc>
+<status status="PASS" start="2025-05-07T00:58:09.450502" elapsed="6.062448"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T00:58:16.514362" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T00:58:15.513804" elapsed="1.000728"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>[Step 2] After 4 TAB presses:</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T00:58:16.514874" elapsed="0.000273"/>
+</kw>
+<kw name="Log Focused Element Info">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-05-07T00:58:16.515907" level="INFO">Executing JavaScript:
+return document.activeElement.tagName || ''
+Without any arguments.</msg>
+<msg time="2025-05-07T00:58:16.522467" level="INFO">${tag} = A</msg>
+<var>${tag}</var>
+<arg>return document.activeElement.tagName || ''</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-05-07T00:58:16.515591" elapsed="0.006932"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-05-07T00:58:16.523120" level="INFO">Executing JavaScript:
+return document.activeElement.className || ''
+Without any arguments.</msg>
+<msg time="2025-05-07T00:58:16.527404" level="INFO">${cls} = qr-link</msg>
+<var>${cls}</var>
+<arg>return document.activeElement.className || ''</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-05-07T00:58:16.522750" elapsed="0.004701"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-05-07T00:58:16.527983" level="INFO">Executing JavaScript:
+return document.activeElement.id || ''
+Without any arguments.</msg>
+<msg time="2025-05-07T00:58:16.534748" level="INFO">${id} = </msg>
+<var>${id}</var>
+<arg>return document.activeElement.id || ''</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-05-07T00:58:16.527633" elapsed="0.007189"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-05-07T00:58:16.535701" level="INFO">Executing JavaScript:
+return document.activeElement.textContent || ''
+Without any arguments.</msg>
+<msg time="2025-05-07T00:58:16.541363" level="INFO">${text} = Esqueceu sua senha?</msg>
+<var>${text}</var>
+<arg>return document.activeElement.textContent || ''</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-05-07T00:58:16.535104" elapsed="0.006313"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-05-07T00:58:16.542061" level="INFO">Executing JavaScript:
+return document.activeElement.value || ''
+Without any arguments.</msg>
+<msg time="2025-05-07T00:58:16.546890" level="INFO">${value} = </msg>
+<var>${value}</var>
+<arg>return document.activeElement.value || ''</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-05-07T00:58:16.541606" elapsed="0.005326"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Focused Element:\n - Tag: ${tag}\n - ID: ${id}\n - Class: ${cls}\n - Text: ${text}\n - Value: ${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T00:58:16.547070" elapsed="0.000448"/>
+</kw>
+<status status="PASS" start="2025-05-07T00:58:16.515360" elapsed="0.032223"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-05-07T00:58:16.547966" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2025-05-07T00:58:16.548035" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2025-05-07T00:58:16.548071" level="INFO">Releasing special key ENTER.</msg>
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-05-07T00:58:16.547724" elapsed="0.327577"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T00:58:17.875985" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T00:58:16.875713" elapsed="1.000477"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-05-07T00:58:17.877609" level="INFO">Sending key(s) ('ESC',) to page.</msg>
+<msg time="2025-05-07T00:58:17.877748" level="INFO">Pressing special key ESCAPE to browser.</msg>
+<msg time="2025-05-07T00:58:17.877860" level="INFO">Releasing special key ESCAPE.</msg>
+<arg>None</arg>
+<arg>ESC</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-05-07T00:58:17.876908" elapsed="0.014500"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T00:58:18.892711" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T00:58:17.891942" elapsed="1.000974"/>
 </kw>
 <kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-04-30T17:36:39.279483" elapsed="2.371854"/>
+<status status="PASS" start="2025-05-07T00:58:18.893670" elapsed="2.392863"/>
 </kw>
-<status status="PASS" start="2025-04-30T17:36:23.952012" elapsed="17.699812"/>
+<status status="PASS" start="2025-05-07T00:58:00.322392" elapsed="20.965089"/>
 </test>
-<status status="PASS" start="2025-04-30T17:36:23.780714" elapsed="17.872476"/>
+<status status="PASS" start="2025-05-07T00:58:00.181963" elapsed="21.107194"/>
+</suite>
+<suite id="s1-s2" name="Test" source="C:\Users\jacques.schmitz\Desktop\robot axe\test.robot">
+<test id="s1-s2-t1" name="Qulture Rocks General Accessibility Test" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T00:58:21.298181" level="INFO">Opening browser 'chrome' to base url 'https://app.qulture.rocks/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<arg>chrome_options=${HEADLESS_ARGS}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T00:58:21.297652" elapsed="7.358320"/>
+</kw>
+<kw name="Run Accessibility Tests" owner="AxeLibrary">
+<msg time="2025-05-07T00:58:33.377094" level="INFO">{'inapplicable': 32, 'incomplete': 1, 'passes': 26, 'violations': 8}</msg>
+<msg time="2025-05-07T00:58:33.377540" level="INFO">&amp;{results} = { inapplicable=32 | incomplete=1 | passes=26 | violations=8 }</msg>
+<var>&amp;{results}</var>
+<arg>${RESULTS_FILE}</arg>
+<doc>Executes accessibility tests in current page by injecting axe-core javascript and write results into `result_file` (json). Return result statisitics</doc>
+<status status="PASS" start="2025-05-07T00:58:28.656441" elapsed="4.721135"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-07T00:58:33.378541" level="INFO">Violations Count: 8</msg>
+<arg>Violations Count: ${results.violations}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-07T00:58:33.378103" elapsed="0.000486"/>
+</kw>
+<kw name="Log Readable Accessibility Result" owner="AxeLibrary">
+<msg time="2025-05-07T00:58:33.378938" level="INFO" html="true">
+                &lt;style&gt;
+                    #demo table, #demo th, #demo td{
+                        border: 1px dotted black;
+                        border-collapse: collapse;
+                        table-layout: auto;
+                    }
+                &lt;/style&gt;
+                &lt;table id="demo" style="width:100%"&gt;
+                    &lt;tr&gt;
+                        &lt;th style="width:50%"&gt;Issue&lt;/th&gt;
+                        &lt;th style="width:5%"&gt;URL&lt;/th&gt;
+                        &lt;th style="width:7%"&gt;Impact&lt;/th&gt;
+                        &lt;th style="width:10%"&gt;Tags&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;aria-allowed-role - Ensures role attribute has an appropriate value for the element&lt;/td&gt;
+                        &lt;td style="text-align:center"&gt;&lt;a href="https://dequeuniversity.com/rules/axe/3.1/aria-allowed-role?application=axeAPI"&gt;Link&lt;/a&gt;&lt;/td&gt;
+                        &lt;td style="text-align:center"&gt;minor&lt;/td&gt;
+                        &lt;td style="text-align:center"&gt;cat.aria best-practice&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                &lt;table id="demodesc" style="width:100%"&gt;
+                    &lt;tr&gt;
+                        &lt;th style="text-align:left"&gt;Element Affected&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;1) Target: .qr-button
+		role button  is not allowed for given element&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                </msg>
+<msg time="2025-05-07T00:58:33.378984" level="INFO" html="true">
+                &lt;style&gt;
+                    #demo table, #demo th, #demo td{
+                        border: 1px dotted black;
+                        border-collapse: collapse;
+                        table-layout: auto;
+                    }
+                &lt;/style&gt;
+                &lt;table id="demo" style="width:100%"&gt;
+                    &lt;tr&gt;
+                        &lt;th style="width:50%"&gt;Issue&lt;/th&gt;
+                        &lt;th style="width:5%"&gt;URL&lt;/th&gt;
+                        &lt;th style="width:7%"&gt;Impact&lt;/th&gt;
+                        &lt;th style="width:10%"&gt;Tags&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;autocomplete-valid - Ensure the autocomplete attribute is correct and suitable for the form field&lt;/td&gt;
+                        &lt;td style="text-align:center"&gt;&lt;a href="https://dequeuniversity.com/rules/axe/3.1/autocomplete-valid?application=axeAPI"&gt;Link&lt;/a&gt;&lt;/td&gt;
+                        &lt;td style="text-align:center"&gt;serious&lt;/td&gt;
+                        &lt;td style="text-align:center"&gt;cat.forms wcag21aa wcag135&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                &lt;table id="demodesc" style="width:100%"&gt;
+                    &lt;tr&gt;
+                        &lt;th style="text-align:left"&gt;Element Affected&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;1) Target: #user_password
+		the autocomplete value is inappropriate for this type of input&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                </msg>
+<msg time="2025-05-07T00:58:33.379148" level="INFO" html="true">
+                &lt;style&gt;
+                    #demo table, #demo th, #demo td{
+                        border: 1px dotted black;
+                        border-collapse: collapse;
+                        table-layout: auto;
+                    }
+                &lt;/style&gt;
+                &lt;table id="demo" style="width:100%"&gt;
+                    &lt;tr&gt;
+                        &lt;th style="width:50%"&gt;Issue&lt;/th&gt;
+                        &lt;th style="width:5%"&gt;URL&lt;/th&gt;
+                        &lt;th style="width:7%"&gt;Impact&lt;/th&gt;
+                        &lt;th style="width:10%"&gt;Tags&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;bypass - Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content&lt;/td&gt;
+                        &lt;td style="text-align:center"&gt;&lt;a href="https://dequeuniversity.com/rules/axe/3.1/bypass?application=axeAPI"&gt;Link&lt;/a&gt;&lt;/td&gt;
+                        &lt;td style="text-align:center"&gt;serious&lt;/td&gt;
+                        &lt;td style="text-align:center"&gt;cat.keyboard wcag2a wcag241 section508 section508.22.o&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                &lt;table id="demodesc" style="width:100%"&gt;
+                    &lt;tr&gt;
+                        &lt;th style="text-align:left"&gt;Element Affected&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;1) Target: html
+		No valid skip link found
+		Page does not have a header
+		Page does not have a landmark region&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                </msg>
+<msg time="2025-05-07T00:58:33.379191" level="INFO" html="true">
+                &lt;style&gt;
+                    #demo table, #demo th, #demo td{
+                        border: 1px dotted black;
+                        border-collapse: collapse;
+                        table-layout: auto;
+                    }
+                &lt;/style&gt;
+                &lt;table id="demo" style="width:100%"&gt;
+                    &lt;tr&gt;
+                        &lt;th style="width:50%"&gt;Issue&lt;/th&gt;
+                        &lt;th style="width:5%"&gt;URL&lt;/th&gt;
+                        &lt;th style="width:7%"&gt;Impact&lt;/th&gt;
+                        &lt;th style="width:10%"&gt;Tags&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;color-contrast - Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds&lt;/td&gt;
+                        &lt;td style="text-align:center"&gt;&lt;a href="https://dequeuniversity.com/rules/axe/3.1/color-contrast?application=axeAPI"&gt;Link&lt;/a&gt;&lt;/td&gt;
+                        &lt;td style="text-align:center"&gt;serious&lt;/td&gt;
+                        &lt;td style="text-align:center"&gt;cat.color wcag2aa wcag143&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                &lt;table id="demodesc" style="width:100%"&gt;
+                    &lt;tr&gt;
+                        &lt;th style="text-align:left"&gt;Element Affected&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;1) Target: .new_session__divider-text
+		Element has insufficient color contrast of 1.83 (foreground color: #bfbfbf, background color: #ffffff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                </msg>
+<msg time="2025-05-07T00:58:33.379228" level="INFO" html="true">
+                &lt;style&gt;
+                    #demo table, #demo th, #demo td{
+                        border: 1px dotted black;
+                        border-collapse: collapse;
+                        table-layout: auto;
+                    }
+                &lt;/style&gt;
+                &lt;table id="demo" style="width:100%"&gt;
+                    &lt;tr&gt;
+                        &lt;th style="width:50%"&gt;Issue&lt;/th&gt;
+                        &lt;th style="width:5%"&gt;URL&lt;/th&gt;
+                        &lt;th style="width:7%"&gt;Impact&lt;/th&gt;
+                        &lt;th style="width:10%"&gt;Tags&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;html-has-lang - Ensures every HTML document has a lang attribute&lt;/td&gt;
+                        &lt;td style="text-align:center"&gt;&lt;a href="https://dequeuniversity.com/rules/axe/3.1/html-has-lang?application=axeAPI"&gt;Link&lt;/a&gt;&lt;/td&gt;
+                        &lt;td style="text-align:center"&gt;serious&lt;/td&gt;
+                        &lt;td style="text-align:center"&gt;cat.language wcag2a wcag311&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                &lt;table id="demodesc" style="width:100%"&gt;
+                    &lt;tr&gt;
+                        &lt;th style="text-align:left"&gt;Element Affected&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;1) Target: html
+		The &lt;html&gt; element does not have a lang attribute&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                </msg>
+<msg time="2025-05-07T00:58:33.379262" level="INFO" html="true">
+                &lt;style&gt;
+                    #demo table, #demo th, #demo td{
+                        border: 1px dotted black;
+                        border-collapse: collapse;
+                        table-layout: auto;
+                    }
+                &lt;/style&gt;
+                &lt;table id="demo" style="width:100%"&gt;
+                    &lt;tr&gt;
+                        &lt;th style="width:50%"&gt;Issue&lt;/th&gt;
+                        &lt;th style="width:5%"&gt;URL&lt;/th&gt;
+                        &lt;th style="width:7%"&gt;Impact&lt;/th&gt;
+                        &lt;th style="width:10%"&gt;Tags&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;landmark-one-main - Ensures the page has only one main landmark and each iframe in the page has at most one main landmark&lt;/td&gt;
+                        &lt;td style="text-align:center"&gt;&lt;a href="https://dequeuniversity.com/rules/axe/3.1/landmark-one-main?application=axeAPI"&gt;Link&lt;/a&gt;&lt;/td&gt;
+                        &lt;td style="text-align:center"&gt;moderate&lt;/td&gt;
+                        &lt;td style="text-align:center"&gt;cat.semantics best-practice&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                &lt;table id="demodesc" style="width:100%"&gt;
+                    &lt;tr&gt;
+                        &lt;th style="text-align:left"&gt;Element Affected&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;1) Target: html
+		Page does not have a main landmark&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                </msg>
+<msg time="2025-05-07T00:58:33.379295" level="INFO" html="true">
+                &lt;style&gt;
+                    #demo table, #demo th, #demo td{
+                        border: 1px dotted black;
+                        border-collapse: collapse;
+                        table-layout: auto;
+                    }
+                &lt;/style&gt;
+                &lt;table id="demo" style="width:100%"&gt;
+                    &lt;tr&gt;
+                        &lt;th style="width:50%"&gt;Issue&lt;/th&gt;
+                        &lt;th style="width:5%"&gt;URL&lt;/th&gt;
+                        &lt;th style="width:7%"&gt;Impact&lt;/th&gt;
+                        &lt;th style="width:10%"&gt;Tags&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;page-has-heading-one - Ensure that the page, or at least one of its frames contains a level-one heading&lt;/td&gt;
+                        &lt;td style="text-align:center"&gt;&lt;a href="https://dequeuniversity.com/rules/axe/3.1/page-has-heading-one?application=axeAPI"&gt;Link&lt;/a&gt;&lt;/td&gt;
+                        &lt;td style="text-align:center"&gt;moderate&lt;/td&gt;
+                        &lt;td style="text-align:center"&gt;cat.semantics best-practice&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                &lt;table id="demodesc" style="width:100%"&gt;
+                    &lt;tr&gt;
+                        &lt;th style="text-align:left"&gt;Element Affected&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;1) Target: html
+		Page must have a level-one heading&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                </msg>
+<msg time="2025-05-07T00:58:33.379350" level="INFO" html="true">
+                &lt;style&gt;
+                    #demo table, #demo th, #demo td{
+                        border: 1px dotted black;
+                        border-collapse: collapse;
+                        table-layout: auto;
+                    }
+                &lt;/style&gt;
+                &lt;table id="demo" style="width:100%"&gt;
+                    &lt;tr&gt;
+                        &lt;th style="width:50%"&gt;Issue&lt;/th&gt;
+                        &lt;th style="width:5%"&gt;URL&lt;/th&gt;
+                        &lt;th style="width:7%"&gt;Impact&lt;/th&gt;
+                        &lt;th style="width:10%"&gt;Tags&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;region - Ensures all page content is contained by landmarks&lt;/td&gt;
+                        &lt;td style="text-align:center"&gt;&lt;a href="https://dequeuniversity.com/rules/axe/3.1/region?application=axeAPI"&gt;Link&lt;/a&gt;&lt;/td&gt;
+                        &lt;td style="text-align:center"&gt;moderate&lt;/td&gt;
+                        &lt;td style="text-align:center"&gt;cat.keyboard best-practice&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                &lt;table id="demodesc" style="width:100%"&gt;
+                    &lt;tr&gt;
+                        &lt;th style="text-align:left"&gt;Element Affected&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;1) Target: html
+		Some page content is not contained by landmarks&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                </msg>
+<arg>violations</arg>
+<doc>Inserts readable accessibility result into `log.html` based on given `type`. Need to be used after `Run Accessibility Tests` keyword</doc>
+<status status="PASS" start="2025-05-07T00:58:33.378805" elapsed="0.000594"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-05-07T00:58:33.379666" elapsed="2.262588"/>
+</kw>
+<status status="PASS" start="2025-05-07T00:58:21.296854" elapsed="14.345910"/>
+</test>
+<status status="PASS" start="2025-05-07T00:58:21.290729" elapsed="14.353203"/>
+</suite>
+<status status="PASS" start="2025-05-07T00:58:00.154778" elapsed="35.490618"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Test" id="s1" pass="1" fail="0" skip="0">Test</stat>
+<stat name="Keyboard Navigation Test &amp; Test" id="s1" pass="2" fail="0" skip="0">Keyboard Navigation Test &amp; Test</stat>
+<stat name="Keyboard Navigation Test" id="s1-s1" pass="1" fail="0" skip="0">Keyboard Navigation Test &amp; Test.Keyboard Navigation Test</stat>
+<stat name="Test" id="s1-s2" pass="1" fail="0" skip="0">Keyboard Navigation Test &amp; Test.Test</stat>
 </suite>
 </statistics>
 <errors>

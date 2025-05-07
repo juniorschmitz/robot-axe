@@ -1,15 +1,22 @@
 *** Settings ***
 Library    SeleniumLibrary
 Library    AxeLibrary
+Library    Collections
+
+*** Variables ***
+${HEADLESS_ARGS}    --headless --disable-gpu --no-sandbox --window-size=1920,1080
+${URL}              https://app.qulture.rocks/
+${RESULTS_FILE}     qulture.json
 
 *** Test Cases ***
-Qulture Rocks Accessibility Test
-   Open Browser    https://app.qulture.rocks/    Headless Chrome
+Qulture Rocks General Accessibility Test
+   Open Browser    ${URL}    chrome    chrome_options=${HEADLESS_ARGS}
    
-   # execute accessibility tests
-   &{results}=    Run Accessibility Tests    qulture.json
+   # Execute general accessibility tests
+   &{results}=    Run Accessibility Tests    ${RESULTS_FILE}
    Log   Violations Count: ${results.violations}
 
-   # log violation result to log.html
+   # Log violation result to log.html
    Log Readable Accessibility Result    violations
    [Teardown]    Close All Browsers
+   
