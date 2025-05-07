@@ -15,6 +15,7 @@ Qulture Rocks General Accessibility Test
    # Execute general accessibility tests
    &{results}=    Run Accessibility Tests    ${RESULTS_FILE}
    Log   Violations Count: ${results.violations}
+   Capture Page Screenshot
 
    # Log violation result to log.html
    Log Readable Accessibility Result    violations

@@ -28,6 +28,19 @@
             ]
         },
         {
+            "description": "Ensures ARIA attributes are allowed for an element's role",
+            "help": "Elements must only use allowed ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/aria-allowed-attr?application=axeAPI",
+            "id": "aria-allowed-attr",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag412"
+            ]
+        },
+        {
             "description": "Ensures unsupported DPUB roles are only used on elements with implicit fallback roles",
             "help": "Unsupported DPUB ARIA roles should be used on elements with implicit fallback roles",
             "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/aria-dpub-role-fallback?application=axeAPI",
@@ -38,6 +51,32 @@
                 "cat.aria",
                 "wcag2a",
                 "wcag131"
+            ]
+        },
+        {
+            "description": "Ensures all ARIA attributes have valid values",
+            "help": "ARIA attributes must conform to valid values",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/aria-valid-attr-value?application=axeAPI",
+            "id": "aria-valid-attr-value",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag412"
+            ]
+        },
+        {
+            "description": "Ensures attributes that begin with aria- are valid ARIA attributes",
+            "help": "ARIA attributes must conform to valid names",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/aria-valid-attr?application=axeAPI",
+            "id": "aria-valid-attr",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.aria",
+                "wcag2a",
+                "wcag412"
             ]
         },
         {
@@ -103,6 +142,46 @@
             "tags": [
                 "cat.name-role-value",
                 "best-practice"
+            ]
+        },
+        {
+            "description": "Ensures <iframe> and <frame> elements contain the axe-core script",
+            "help": "Frames must be tested with axe-core",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/frame-tested?application=axeAPI",
+            "id": "frame-tested",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.structure",
+                "review-item"
+            ]
+        },
+        {
+            "description": "Ensures <iframe> and <frame> elements contain a unique title attribute",
+            "help": "Frames must have a unique title attribute",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/frame-title-unique?application=axeAPI",
+            "id": "frame-title-unique",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.text-alternatives",
+                "best-practice"
+            ]
+        },
+        {
+            "description": "Ensures <iframe> and <frame> elements contain a non-empty title attribute",
+            "help": "Frames must have title attribute",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/frame-title?application=axeAPI",
+            "id": "frame-title",
+            "impact": null,
+            "nodes": [],
+            "tags": [
+                "cat.text-alternatives",
+                "wcag2a",
+                "wcag241",
+                "wcag412",
+                "section508",
+                "section508.22.i"
             ]
         },
         {
@@ -426,72 +505,8 @@
             ]
         }
     ],
-    "incomplete": [
-        {
-            "description": "Ensures <iframe> and <frame> elements contain the axe-core script",
-            "help": "Frames must be tested with axe-core",
-            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/frame-tested?application=axeAPI",
-            "id": "frame-tested",
-            "impact": "critical",
-            "nodes": [
-                {
-                    "all": [
-                        {
-                            "data": null,
-                            "id": "frame-tested",
-                            "impact": "critical",
-                            "message": "The iframe still has to be tested with axe-core",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "any": [],
-                    "html": "<iframe src=\"https://app.hubspot.com/conversations-visitor/9475110/threads/utk/fed5b7517e4f4e888da5000c15f77e8c?uuid=eacf60f6bcf746eb8afbfedc5df57d73&amp;mobile=false&amp;mobileSafari=false&amp;hideWelcomeMessage=false&amp;hstc=&amp;domain=app.qulture.rocks&amp;inApp53=false&amp;messagesUtk=fed5b7517e4f4e888da5000c15f77e8c&amp;url=https%3A%2F%2Fapp.qulture.rocks%2Fusers%2Fsign_in&amp;inline=false&amp;isFullscreen=false&amp;globalCookieOptOut=&amp;isFirstVisitorSession=true&amp;isAttachmentDisabled=false&amp;isInitialInputFocusDisabled=false&amp;enableWidgetCookieBanner=false&amp;isInCMS=false&amp;hideScrollToButton=true&amp;isIOSMobile=false\" id=\"hubspot-conversations-iframe\" title=\"Chat Widget\" allowfullscreen=\"\" data-test-id=\"chat-widget-iframe\">",
-                    "impact": "critical",
-                    "none": [],
-                    "target": [
-                        "#hubspot-conversations-iframe"
-                    ]
-                }
-            ],
-            "tags": [
-                "cat.structure",
-                "review-item"
-            ]
-        }
-    ],
+    "incomplete": [],
     "passes": [
-        {
-            "description": "Ensures ARIA attributes are allowed for an element's role",
-            "help": "Elements must only use allowed ARIA attributes",
-            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/aria-allowed-attr?application=axeAPI",
-            "id": "aria-allowed-attr",
-            "impact": null,
-            "nodes": [
-                {
-                    "all": [],
-                    "any": [
-                        {
-                            "data": null,
-                            "id": "aria-allowed-attr",
-                            "impact": "critical",
-                            "message": "ARIA attributes are used correctly for the defined role",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "html": "<div role=\"region\" aria-label=\"Widget de chat\" id=\"hubspot-messages-iframe-container\" class=\"widget-align-right\" style=\"min-height: 96px; min-width: 100px; width: 92px; height: 92px;\">",
-                    "impact": null,
-                    "none": [],
-                    "target": [
-                        "#hubspot-messages-iframe-container"
-                    ]
-                }
-            ],
-            "tags": [
-                "cat.aria",
-                "wcag2a",
-                "wcag412"
-            ]
-        },
         {
             "description": "Ensures role attribute has an appropriate value for the element",
             "help": "ARIA role must be appropriate for the element",
@@ -551,24 +566,6 @@
                     "none": [],
                     "target": [
                         "a[rel=\"nofollow\"]"
-                    ]
-                },
-                {
-                    "all": [],
-                    "any": [
-                        {
-                            "data": null,
-                            "id": "aria-allowed-role",
-                            "impact": "minor",
-                            "message": "ARIA role is allowed for given element",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "html": "<div role=\"region\" aria-label=\"Widget de chat\" id=\"hubspot-messages-iframe-container\" class=\"widget-align-right\" style=\"min-height: 96px; min-width: 100px; width: 92px; height: 92px;\">",
-                    "impact": null,
-                    "none": [],
-                    "target": [
-                        "#hubspot-messages-iframe-container"
                     ]
                 }
             ],
@@ -687,24 +684,6 @@
                     "target": [
                         "a[rel=\"nofollow\"]"
                     ]
-                },
-                {
-                    "all": [],
-                    "any": [
-                        {
-                            "data": null,
-                            "id": "aria-required-attr",
-                            "impact": "critical",
-                            "message": "All required ARIA attributes are present",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "html": "<div role=\"region\" aria-label=\"Widget de chat\" id=\"hubspot-messages-iframe-container\" class=\"widget-align-right\" style=\"min-height: 96px; min-width: 100px; width: 92px; height: 92px;\">",
-                    "impact": null,
-                    "none": [],
-                    "target": [
-                        "#hubspot-messages-iframe-container"
-                    ]
                 }
             ],
             "tags": [
@@ -791,24 +770,6 @@
                     "target": [
                         "a[rel=\"nofollow\"]"
                     ]
-                },
-                {
-                    "all": [],
-                    "any": [
-                        {
-                            "data": null,
-                            "id": "aria-required-children",
-                            "impact": "critical",
-                            "message": "Required ARIA children are present",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "html": "<div role=\"region\" aria-label=\"Widget de chat\" id=\"hubspot-messages-iframe-container\" class=\"widget-align-right\" style=\"min-height: 96px; min-width: 100px; width: 92px; height: 92px;\">",
-                    "impact": null,
-                    "none": [],
-                    "target": [
-                        "#hubspot-messages-iframe-container"
-                    ]
                 }
             ],
             "tags": [
@@ -894,24 +855,6 @@
                     "none": [],
                     "target": [
                         "a[rel=\"nofollow\"]"
-                    ]
-                },
-                {
-                    "all": [],
-                    "any": [
-                        {
-                            "data": null,
-                            "id": "aria-required-parent",
-                            "impact": "critical",
-                            "message": "Required ARIA parent role present",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "html": "<div role=\"region\" aria-label=\"Widget de chat\" id=\"hubspot-messages-iframe-container\" class=\"widget-align-right\" style=\"min-height: 96px; min-width: 100px; width: 92px; height: 92px;\">",
-                    "impact": null,
-                    "none": [],
-                    "target": [
-                        "#hubspot-messages-iframe-container"
                     ]
                 }
             ],
@@ -1054,109 +997,6 @@
                     ],
                     "target": [
                         "a[rel=\"nofollow\"]"
-                    ]
-                },
-                {
-                    "all": [],
-                    "any": [],
-                    "html": "<div role=\"region\" aria-label=\"Widget de chat\" id=\"hubspot-messages-iframe-container\" class=\"widget-align-right\" style=\"min-height: 96px; min-width: 100px; width: 92px; height: 92px;\">",
-                    "impact": null,
-                    "none": [
-                        {
-                            "data": null,
-                            "id": "invalidrole",
-                            "impact": "critical",
-                            "message": "ARIA role is valid",
-                            "relatedNodes": []
-                        },
-                        {
-                            "data": null,
-                            "id": "abstractrole",
-                            "impact": "serious",
-                            "message": "Abstract roles are not used",
-                            "relatedNodes": []
-                        },
-                        {
-                            "data": null,
-                            "id": "unsupportedrole",
-                            "impact": "critical",
-                            "message": "ARIA role is supported",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "target": [
-                        "#hubspot-messages-iframe-container"
-                    ]
-                }
-            ],
-            "tags": [
-                "cat.aria",
-                "wcag2a",
-                "wcag412"
-            ]
-        },
-        {
-            "description": "Ensures all ARIA attributes have valid values",
-            "help": "ARIA attributes must conform to valid values",
-            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/aria-valid-attr-value?application=axeAPI",
-            "id": "aria-valid-attr-value",
-            "impact": null,
-            "nodes": [
-                {
-                    "all": [
-                        {
-                            "data": null,
-                            "id": "aria-valid-attr-value",
-                            "impact": "critical",
-                            "message": "ARIA attribute values are valid",
-                            "relatedNodes": []
-                        },
-                        {
-                            "data": null,
-                            "id": "aria-errormessage",
-                            "impact": "critical",
-                            "message": "Uses a supported aria-errormessage technique",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "any": [],
-                    "html": "<div role=\"region\" aria-label=\"Widget de chat\" id=\"hubspot-messages-iframe-container\" class=\"widget-align-right\" style=\"min-height: 96px; min-width: 100px; width: 92px; height: 92px;\">",
-                    "impact": null,
-                    "none": [],
-                    "target": [
-                        "#hubspot-messages-iframe-container"
-                    ]
-                }
-            ],
-            "tags": [
-                "cat.aria",
-                "wcag2a",
-                "wcag412"
-            ]
-        },
-        {
-            "description": "Ensures attributes that begin with aria- are valid ARIA attributes",
-            "help": "ARIA attributes must conform to valid names",
-            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/aria-valid-attr?application=axeAPI",
-            "id": "aria-valid-attr",
-            "impact": null,
-            "nodes": [
-                {
-                    "all": [],
-                    "any": [
-                        {
-                            "data": null,
-                            "id": "aria-valid-attr",
-                            "impact": "critical",
-                            "message": "ARIA attribute name are valid",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "html": "<div role=\"region\" aria-label=\"Widget de chat\" id=\"hubspot-messages-iframe-container\" class=\"widget-align-right\" style=\"min-height: 96px; min-width: 100px; width: 92px; height: 92px;\">",
-                    "impact": null,
-                    "none": [],
-                    "target": [
-                        "#hubspot-messages-iframe-container"
                     ]
                 }
             ],
@@ -1949,42 +1789,6 @@
                     "all": [],
                     "any": [
                         {
-                            "data": "googleidentityservice_button_styles",
-                            "id": "duplicate-id",
-                            "impact": "minor",
-                            "message": "Document has no static elements that share the same id attribute",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "html": "<style id=\"googleidentityservice_button_styles\">",
-                    "impact": null,
-                    "none": [],
-                    "target": [
-                        "#googleidentityservice_button_styles"
-                    ]
-                },
-                {
-                    "all": [],
-                    "any": [
-                        {
-                            "data": "web-interactives-conversations-override",
-                            "id": "duplicate-id",
-                            "impact": "minor",
-                            "message": "Document has no static elements that share the same id attribute",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "html": "<style id=\"web-interactives-conversations-override\">#hubspot-messages-iframe-container { z-index: 9990!important; }</style>",
-                    "impact": null,
-                    "none": [],
-                    "target": [
-                        "#web-interactives-conversations-override"
-                    ]
-                },
-                {
-                    "all": [],
-                    "any": [
-                        {
                             "data": "hs-web-interactives-top-push-anchor",
                             "id": "duplicate-id",
                             "impact": "minor",
@@ -2208,47 +2012,11 @@
                             "relatedNodes": []
                         }
                     ],
-                    "html": "<div id=\"hs-web-interactives-floating-bottom-right-anchor\" class=\"go2417249464 go3967842156\" style=\"margin-bottom: 96px;\">\n  </div>",
+                    "html": "<div id=\"hs-web-interactives-floating-bottom-right-anchor\" class=\"go2417249464 go3967842156\">\n  </div>",
                     "impact": null,
                     "none": [],
                     "target": [
                         "#hs-web-interactives-floating-bottom-right-anchor"
-                    ]
-                },
-                {
-                    "all": [],
-                    "any": [
-                        {
-                            "data": "hubspot-messages-iframe-container",
-                            "id": "duplicate-id",
-                            "impact": "minor",
-                            "message": "Document has no static elements that share the same id attribute",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "html": "<div role=\"region\" aria-label=\"Widget de chat\" id=\"hubspot-messages-iframe-container\" class=\"widget-align-right\" style=\"min-height: 96px; min-width: 100px; width: 92px; height: 92px;\">",
-                    "impact": null,
-                    "none": [],
-                    "target": [
-                        "#hubspot-messages-iframe-container"
-                    ]
-                },
-                {
-                    "all": [],
-                    "any": [
-                        {
-                            "data": "hubspot-conversations-iframe",
-                            "id": "duplicate-id",
-                            "impact": "minor",
-                            "message": "Document has no static elements that share the same id attribute",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "html": "<iframe src=\"https://app.hubspot.com/conversations-visitor/9475110/threads/utk/fed5b7517e4f4e888da5000c15f77e8c?uuid=eacf60f6bcf746eb8afbfedc5df57d73&amp;mobile=false&amp;mobileSafari=false&amp;hideWelcomeMessage=false&amp;hstc=&amp;domain=app.qulture.rocks&amp;inApp53=false&amp;messagesUtk=fed5b7517e4f4e888da5000c15f77e8c&amp;url=https%3A%2F%2Fapp.qulture.rocks%2Fusers%2Fsign_in&amp;inline=false&amp;isFullscreen=false&amp;globalCookieOptOut=&amp;isFirstVisitorSession=true&amp;isAttachmentDisabled=false&amp;isInitialInputFocusDisabled=false&amp;enableWidgetCookieBanner=false&amp;isInCMS=false&amp;hideScrollToButton=true&amp;isIOSMobile=false\" id=\"hubspot-conversations-iframe\" title=\"Chat Widget\" allowfullscreen=\"\" data-test-id=\"chat-widget-iframe\">",
-                    "impact": null,
-                    "none": [],
-                    "target": [
-                        "#hubspot-conversations-iframe"
                     ]
                 }
             ],
@@ -2256,72 +2024,6 @@
                 "cat.parsing",
                 "wcag2a",
                 "wcag411"
-            ]
-        },
-        {
-            "description": "Ensures <iframe> and <frame> elements contain a unique title attribute",
-            "help": "Frames must have a unique title attribute",
-            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/frame-title-unique?application=axeAPI",
-            "id": "frame-title-unique",
-            "impact": null,
-            "nodes": [
-                {
-                    "all": [],
-                    "any": [],
-                    "html": "<iframe src=\"https://app.hubspot.com/conversations-visitor/9475110/threads/utk/fed5b7517e4f4e888da5000c15f77e8c?uuid=eacf60f6bcf746eb8afbfedc5df57d73&amp;mobile=false&amp;mobileSafari=false&amp;hideWelcomeMessage=false&amp;hstc=&amp;domain=app.qulture.rocks&amp;inApp53=false&amp;messagesUtk=fed5b7517e4f4e888da5000c15f77e8c&amp;url=https%3A%2F%2Fapp.qulture.rocks%2Fusers%2Fsign_in&amp;inline=false&amp;isFullscreen=false&amp;globalCookieOptOut=&amp;isFirstVisitorSession=true&amp;isAttachmentDisabled=false&amp;isInitialInputFocusDisabled=false&amp;enableWidgetCookieBanner=false&amp;isInCMS=false&amp;hideScrollToButton=true&amp;isIOSMobile=false\" id=\"hubspot-conversations-iframe\" title=\"Chat Widget\" allowfullscreen=\"\" data-test-id=\"chat-widget-iframe\">",
-                    "impact": null,
-                    "none": [
-                        {
-                            "data": "chat widget",
-                            "id": "unique-frame-title",
-                            "impact": "serious",
-                            "message": "Element's title attribute is unique",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "target": [
-                        "#hubspot-conversations-iframe"
-                    ]
-                }
-            ],
-            "tags": [
-                "cat.text-alternatives",
-                "best-practice"
-            ]
-        },
-        {
-            "description": "Ensures <iframe> and <frame> elements contain a non-empty title attribute",
-            "help": "Frames must have title attribute",
-            "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/frame-title?application=axeAPI",
-            "id": "frame-title",
-            "impact": null,
-            "nodes": [
-                {
-                    "all": [],
-                    "any": [
-                        {
-                            "data": null,
-                            "id": "non-empty-title",
-                            "impact": "serious",
-                            "message": "Element has a title attribute",
-                            "relatedNodes": []
-                        }
-                    ],
-                    "html": "<iframe src=\"https://app.hubspot.com/conversations-visitor/9475110/threads/utk/fed5b7517e4f4e888da5000c15f77e8c?uuid=eacf60f6bcf746eb8afbfedc5df57d73&amp;mobile=false&amp;mobileSafari=false&amp;hideWelcomeMessage=false&amp;hstc=&amp;domain=app.qulture.rocks&amp;inApp53=false&amp;messagesUtk=fed5b7517e4f4e888da5000c15f77e8c&amp;url=https%3A%2F%2Fapp.qulture.rocks%2Fusers%2Fsign_in&amp;inline=false&amp;isFullscreen=false&amp;globalCookieOptOut=&amp;isFirstVisitorSession=true&amp;isAttachmentDisabled=false&amp;isInitialInputFocusDisabled=false&amp;enableWidgetCookieBanner=false&amp;isInCMS=false&amp;hideScrollToButton=true&amp;isIOSMobile=false\" id=\"hubspot-conversations-iframe\" title=\"Chat Widget\" allowfullscreen=\"\" data-test-id=\"chat-widget-iframe\">",
-                    "impact": null,
-                    "none": [],
-                    "target": [
-                        "#hubspot-conversations-iframe"
-                    ]
-                }
-            ],
-            "tags": [
-                "cat.text-alternatives",
-                "wcag2a",
-                "wcag241",
-                "wcag412",
-                "section508",
-                "section508.22.i"
             ]
         },
         {
@@ -3086,7 +2788,7 @@
             ]
         }
     ],
-    "timestamp": "2025-05-07T04:06:54.622Z",
+    "timestamp": "2025-05-07T04:06:27.250Z",
     "url": "https://app.qulture.rocks/users/sign_in",
     "violations": [
         {

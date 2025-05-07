@@ -19,13 +19,14 @@ Log Focused Element Info
 Tab Navigation
     Press Keys    None    TAB
     Sleep    2s
+    Capture Page Screenshot
 
 *** Test Cases ***
 Qulture Rocks Keyboard Navigation Test
     Open Browser    ${URL}    chrome    chrome_options=${HEADLESS_ARGS}
     
     # Accessibility scan
-    &{results}=    Run Accessibility Tests    keyboard-test.json
+    &{results}=    Run Accessibility Tests    keyboard-test-home.json
     ${violations_count}=    Set Variable    ${results.violations}
     Run Keyword If    ${violations_count} > 0    Log    Found ${violations_count} keyboard navigation issues
     Log Readable Accessibility Result    violations
@@ -43,6 +44,13 @@ Qulture Rocks Keyboard Navigation Test
     # Simulate Enter key press
     Press Keys    None    ENTER
     Sleep         1s
+    # Accessibility scan
+    &{results}=    Run Accessibility Tests    keyboard-test-forgot-password.json
+    ${violations_count}=    Set Variable    ${results.violations}
+    Run Keyword If    ${violations_count} > 0    Log    Found ${violations_count} keyboard navigation issues
+    Log Readable Accessibility Result    violations
+    Capture Page Screenshot
+    
 
     # Simulate Escape key press
     Press Keys    None    ESC
